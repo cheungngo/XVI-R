@@ -1,0 +1,163 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs}
+\allowdisplaybreaks
+\input{../build/R06_numbers.tex}
+\title{XVI-R R06: loop remainders under the hat-aware rule, $Y$-space completeness,\\
+and the \HB{} classes as the invariant evanescent cohomology at $\kappa^3$}
+\author{XVI-R (local landmark; imports XVI-Q frozen at Q11; not published)}
+\date{}
+\begin{document}\maketitle
+\begin{abstract}
+R05 fixed the probe contraction on the $c^*$ line ($\bar\eta\cdot\bar\eta$, $\hat\eta\cdot\hat\eta$, mixed $=0$), but only
+in the $X$-linear part of the ghost rows. (A) We recompute the frozen Q06/Q07 ghost-row \emph{loop remainders} under the
+same rule. They \textbf{change}: $ccK$ goes from \LKo{} to \LKn{} terms (\LKd{} differing) and $cc\bar c$ from \LBo{} to
+\LBn{} (\LBd{} differing). Every differing term carries exactly one hatted contraction, so the 4D projections are
+identical. The drop-$T$ rule is therefore \emph{not} exact for loops (disclosure R06-D1). We propagate the change. The joint
+evanescent counterterm fit (full $hhc$ row, both ghost rows, Bose symmetry, ghost equation) stays solvable, with a purely
+evanescent particular counterterm verified to annihilate every row. The classification depends only on the homogeneous
+system and is unchanged. (B) An independent enumerator shows that the R02--R05 $Y$-basis is exactly the evanescent half of
+all local $\kappa^3$, ghost-number $-1$ functionals at the power-counting dimension. We add the \NF{}+\NGgen{}+\NKKc{}
+nonvanishing purely-4D generators. Of them, \ZP{} combinations have purely evanescent images. Those images have rank
+\ZR{} and all already lie in $T+\text{blind}$, so nothing new becomes trivial. Together with the arguments for total
+derivatives, field redefinitions, EOM, Gram identities and parity, this makes $\dim\bar H=\HB$ the \emph{invariant
+evanescent cohomology at $O(\kappa^3)$}. ``Physical'' is meant in that precise sense only; no direction is certified as an
+observable. Outcome: \textbf{Partial}.
+\end{abstract}
+
+\section{Scope and premises}
+The premises are XVI-Q Q11 (pinned source-only zip \texttt{1888f327\ldots}) and the R01--R05 layers, whose gates must
+ACCEPT. OpenAI.tex and the new sheets are not premises. O.1 stays CLOSED only in its scoped sense; bulk symmetry is not
+restored; the insertion is frozen; Route B is not discharged; XV-B and XIV-J are not opened. No frozen code is edited:
+the contraction is swapped by a wrapper (\texttt{r05\_blocks.contract\_hat}) for the duration of each call. All R06 code
+is in \texttt{r06/}.
+
+\section{(A) The ghost-row loop remainders}
+\subsection{Why R05's argument was incomplete}
+R05 argued that the drop-$T$ rule is exact for loop expressions because probe dots arise there in
+$\eta=\bar\eta+\hat\eta$ pairs. The recomputation below shows that this pairing assumption fails for the loop remainder of the $c^*$-line channel. Single-hatted pieces $T(\cdot,c_i)$ occur there, and the frozen rule annihilates them. We have not isolated which diagram produces them; that is recorded as an observation, not a derivation.
+
+\subsection{Recomputation}
+\texttt{r06\_loops.py} evaluates \texttt{ghost\_row\_total(t,0,0)} under both rules:
+\begin{center}\begin{tabular}{lcccc}\toprule
+row & terms (drop-$T$) & terms (hat-aware) & differing terms & 4D projection\\\midrule
+$ccK$ & \LKo & \LKn & \LKd & identical\\
+$cc\bar c$ & \LBo & \LBn & \LBd & identical\\\bottomrule\end{tabular}\end{center}
+Every difference term has the form $H\,H\,H\,T(\cdot,c_i)$, a single hatted ghost contraction. For example, the $ccK$
+difference contains $-\tfrac1{24}(a_K\!\cdot p_1)(c_1\!\cdot p_1)p_1^2\,\hat T(a_K,c_2)$.
+
+\subsection{Propagation to the evanescent fit}
+\texttt{r06\_refit.py} re-solves the Q07/Q08 joint system with the hat-aware rule applied to the whole ghost rows. The
+unknowns are $\Gamma_{K\!ch}$, $\Gamma_{\bar c ch}$, $\Gamma_{c^*cc}$ and $\Gamma_{hhh}$. The system consists of the
+$ccK$, $cc\bar c$ and $hhc$ rows, Bose symmetry, and the ghost equation $X_C=\rho\,T(X_K)$:
+\begin{itemize}
+\item drop-$T$: solvable; $\dim N$ with the ghost equation $=\QNo$;
+\item hat-aware: \textbf{solvable}; $\dim N$ with the ghost equation $=\QNn$. The particular counterterm has
+\CTK/\CTC/\CTS/\CTH{} terms in $K/C/S/H$, is purely evanescent, and makes every row vanish identically.
+\end{itemize}
+The reduced $\bar\Gamma$ homogeneous system reproduces $\dim\bar N_g=\NB$ exactly, as in R05.
+
+\subsection{Effect on earlier released claims}
+\begin{itemize}
+\item \textbf{Q07 ``all four rows close in 4D'': unaffected.} The 4D ($T\to0$) projections of both remainders are
+identical under the two rules, and the 4D counterterms and 4D residual statements involve only these projections.
+\item \textbf{Ghost-equation compatibility: unaffected, and re-established.} The hat-aware system including the ghost
+equation is solvable with an evanescent particular solution. The frozen Q08 statement used the old remainder; its
+conclusion stands, but its witness counterterm is superseded by the R06 one.
+\item \textbf{R05 classification: unaffected.} $\bar N_g$, $\bar\Sigma$, $T$ and blind depend only on the $X$-linear
+blocks, which R05 already built hat-aware. A change in the inhomogeneous term can only affect existence of a particular
+solution, and existence has been verified.
+\item \textbf{Frozen certificates} (Q06/Q07 remainder hashes and Q07 witness counterterms) are numerically superseded
+for the evanescent part. They are not edited. This is disclosure R06-D1.
+\end{itemize}
+\textbf{Open:} the $hhc$ loop residual stored in XVI-Q was computed in the full (on-shell $B$) formulation. Paired with
+the \emph{reduced} channels ($A$, $D_{EH}$), it gives an unsolvable inhomogeneous system under both rules. The rule change
+is therefore not the cause; the residual is formulation-mismatched. A $\bar\Gamma$-formulation loop residual has not
+been computed. This does not affect $\bar H$, which is homogeneous.
+
+\section{(B) $Y$-space completeness}
+\subsection{The space of local functionals}
+At $O(\kappa^3)$, the counterterm-generating functionals $Y$ have ghost number $-1$, three fields and the power-counting
+dimension. In the reduced formulation the antighost appears only through $\tilde K=K+\bar c F'(h)$, and $B$ is integrated
+out. The candidate field contents are then $\tilde K hh$ (family F), $c^*ch$ (family G) and $\tilde K\tilde Kc$ (family
+KKc). No other ghost-number $-1$, three-field content has the right dimension. In momentum space a local functional is a
+polynomial in $p_1,p_2$ (with $p_3=-p_1-p_2$) contracted with the polarisation slots. The independent monomials are all
+complete pairings of slots with each other or with $p_{1,2}$, with any remaining even momentum degree filled by
+$p_i\!\cdot p_j$. Each slot--slot pairing is either barred ($H$) or hatted ($T$).
+
+\textbf{Total derivatives.} On the support of $\delta(p_1+p_2+p_3)$, a total derivative is multiplication by $\sum p_i=0$.
+Eliminating $p_3$ removes all such relations, so the pairing monomials in $p_1,p_2$ are a basis modulo total derivatives.
+
+\textbf{Enumeration.} An independent enumerator (\texttt{r06\_complete.enum}) generates all pairings and splits them by
+the number of hatted contractions:
+\begin{center}\begin{tabular}{lcccc}\toprule
+space & all & 4D (no $T$) & evanescent ($\ge1\,T$) & frozen basis\\\midrule
+\CountRows\\\bottomrule\end{tabular}\end{center}
+In every row the frozen basis coincides exactly with the independent evanescent set. The only gap is the 4D half, which
+was missing from $Y$.
+
+\subsection{Enlargement by 4D generators}
+For each 4D generator we build $\bar\sigma Y$ with the R03--R05 constructions (F: $D_{EH}$ on all legs, $A_K$,
+$\rho T$; G: $(D^T\tilde K)\cdot G$, $\rho T$, $-s_0h\,\delta Y/\delta h$ with $\epsilon_S=-1$; KKc: replace one $\tilde K$ by
+$\delta S_{EH}/\delta h$). Each image is split into evanescent coordinates plus a 4D remainder in the 4D basis of each
+$X$ sector; nothing is left over. \NF{} F, \NGgen{} G and \NKKc{} KKc generators have nonzero images. The evanescent
+parts span rank \EVR{}. The trivial \emph{evanescent} directions are the combinations with vanishing 4D remainder
+(the 4D part is fixed separately by the 4D renormalisation). There are \ZP{} such combinations; their images have rank
+\ZR{}, lie inside $\bar N_g$ (nilpotency extends), and lie in the already-known $T+\text{blind}$. After enlargement:
+$\dim T=\TB$, $\dim(T+\text{blind})=\TPB$, $\dim\bar H=\HB$, with 0 new trivial directions. The R05 basis of 18
+representatives transports with rank 18 and none becomes trivial.
+
+\subsection{Field redefinitions and equations of motion}
+A field redefinition $h\to h+\kappa^2\Phi(h,c)$ shifts the action by $\frac{\delta S}{\delta h}\Phi$, and in the
+antifield formulation by $\bar\sigma(\tilde K\cdot\Phi)$, since $\bar\sigma\tilde K=\delta\bar\Gamma/\delta h$. The same
+holds for ghost redefinitions with $c^*$: $\bar\sigma(c^*\cdot\Psi)$. Every such $\tilde K\cdot\Phi$ and $c^*\cdot\Psi$
+at this order is a ghost-number $-1$ functional of the F or G type, now included in full. Terms proportional to the EOM
+are exactly these images, so ``modulo EOM'' and ``modulo field redefinitions'' are both contained in ``modulo
+$\bar\sigma Y$'' on the complete $Y$. Redefinitions that are nonlinear in the antifields contribute through KKc, which is
+also complete.
+
+\subsection{Gram identities}
+The algebra treats $H$ and $T$ as independent symbols: formal $d$-dimensional contractions with the split
+$\eta=\bar\eta+\hat\eta$. In that algebra the pairing monomials are linearly independent by construction. A
+four-dimensional Gram identity (antisymmetrisation over five barred indices) is a relation only after restriction to
+strictly 4D kinematics. It identifies certain combinations of barred monomials as evanescent, but it does not act on the
+formal space in which $\bar\sigma$, $\bar N_g$ and $\bar H$ are defined. Any such identity relates 4D monomials to each
+other. Since cohomology is computed on the evanescent quotient with the 4D part fixed separately, a Gram relation can at
+most move a direction between the 4D and evanescent labels. No such move occurs among the classes: all 18
+representatives have at least one $T$ in every term. The count \HB{} is therefore a statement in the formal
+(BMHV-type) algebra. A scheme that imposes Gram identities on the barred subspace would have to repeat the count. This
+is the precise sense of ``invariant''.
+
+\subsection{Parity}
+$\bar\sigma$, the loop residuals and every ansatz are parity-even (no $\epsilon$ tensor). Parity-odd $Y$ and $X$ form a
+separate graded summand that cannot mix with the even one. The 18 even classes are therefore stable under adjoining the
+odd sector. The odd evanescent cohomology itself has not been computed.
+
+\subsection{Conclusion of (B)}
+On the complete space of local, parity-even, ghost-number $-1$ functionals at $O(\kappa^3)$, the reduced hat-aware
+cohomology is $\dim\bar H=\HB$, taken modulo total derivatives, field redefinitions and EOM, and in the formal $H/T$
+algebra. Since (A) leaves the homogeneous system untouched and the fit solvable, these \HB{} classes are the
+\textbf{invariant evanescent cohomology at this order}. They are ``physical'' only in that precise sense. No class is
+certified as an observable direction.
+
+\section{Final counts}
+$\dim\bar N_g=\NB$, $\dim T=\TB$, blind $=\BG$, $\dim(T+\text{blind})=\TPB$, $\dim\bar H=\HB$; certified physical
+(observable) $=0$.
+
+\section{Disclosures}
+\begin{description}
+\item[R06-D1] The frozen Q06/Q07 ghost-row loop remainders differ under the hat-aware rule (evanescent only). They are
+propagated, the fit is solvable and $\bar H$ is unchanged. Frozen certificates are not edited.
+\item[R06-D2] $Y$ is enlarged by the purely-4D generators. There are no new trivial directions.
+\item[R06-D3] All R06 code is in \texttt{r06/}; the R01--R05 gates are untouched.
+\end{description}
+
+\section{Open items}
+\begin{enumerate}
+\item The $hhc$ loop residual in the $\bar\Gamma$ formulation (the inhomogeneous reduced fit).
+\item The parity-odd evanescent cohomology.
+\item Counting in a Gram-reduced scheme, if wanted.
+\item p22 ($\kappa^2$ consistency).
+\item Bulk symmetry stays not restored; the insertion stays frozen; Route B is not discharged.
+\end{enumerate}
+\end{document}

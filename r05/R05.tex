@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs}
+\allowdisplaybreaks
+\input{../build/R05_numbers.tex}
+\title{XVI-R R05: the $T(c^*)$ obstruction is a contraction artefact.\\
+Nilpotent $\bar\sigma$ on the full computed $Y$-space and \HB{} evanescent cohomology classes at $\kappa^3$}
+\author{XVI-R (local landmark; imports XVI-Q frozen at Q11; not published)}
+\date{}
+\begin{document}\maketitle
+\begin{abstract}
+R04 left 13 of 33 images of $Y=c^*\cdot G(c,h)$ failing the ghost rows $ccK$ and $cc\bar c$. Every failing generator
+carried a single hatted contraction on the $c^*$ index. We show that this is a calculus artefact, not an obstruction.
+The frozen probe contraction drops every hatted copy of a probe dot. That rule is exact for loop expressions, where
+probe dots always come in bar$+$hat pairs, but it annihilates the single-hatted $c^*$ contractions of the evanescent
+ansatz $\Gamma_{c^*cc}$ in the ghost-row channel that closes the $c^*$ line. With the split
+$\eta=\bar\eta+\hat\eta$ on that line (bar$\cdot$bar, hat$\cdot$hat, mixed $=0$), all 33 $G$ images, all 185
+$\tilde Khh$ images and all 10 $\tilde K\tilde Kc$ images satisfy the reduced system and the ghost equation. The sign
+$\epsilon_S=-1$ is confirmed as the unique choice: with $+1$, \EPSP{} fail. $\bar\sigma$ is nilpotent on the whole computed $Y$-space:
+$\operatorname{rank}\bar\Sigma=\dim(\bar\Sigma\cap\bar N_g)=\RS$. The reduced cohomology has $\dim\bar H=\HB$. Of R04's
+20 classes, \TRT{} become trivial and \TRN{} are nontrivial. These classes are unconditional on the computed (power-counting) $Y$-space.
+Physical certification still awaits a proof of $Y$-completeness. Outcome: \textbf{Partial}.
+\end{abstract}
+
+\section{Scope}
+Premises are XVI-Q Q11 (pinned zip) and the R01--R04 layers, whose gates must ACCEPT. OpenAI.tex and the new sheets
+are not premises. O.1 stays CLOSED only in its scoped sense; bulk symmetry is not restored; the insertion is frozen. No
+frozen code is edited. The ghost-row \emph{linear} blocks are rebuilt in \texttt{r05/} with a contraction wrapper. The
+frozen loop residuals are not revised (disclosures R05-D1 to D3).
+
+\section{Diagnosis}
+\subsection{Where the 13 fail}
+In R04 the failures lay only in $ccK$ and $cc\bar c$, never in $hhc$ or Bose. Every failing monomial has the form
+$(\cdots)_{H}\,T(x,c^*)$ with $x\in\{c,\epsilon_3\}$: one hatted contraction on the $c^*$ index and only bar contractions
+elsewhere. The six monomials with $T(x,c^*)$ and a second hatted contraction passed.
+
+\subsection{The contraction rule}
+In the ghost rows, the channel $c_1$ is $\Gamma_{c^*cc}\times(\text{kinetic }X\cdot c)$, contracted over the $c^*$ line
+(probe $X$ in the kinetic term, $ZZ$ in $\Gamma_{c^*cc}$). The frozen routine replaces each $4{+}\hat s$ dot by its bar copy
+and \emph{drops every hat copy} of a probe dot. For loop poles every probe dot occurs as bar$+$hat, so the rule is exact.
+The evanescent ansatz $X_S$ (unknown pole coefficients of $\Gamma_{c^*cc}$) instead has monomials with a lone
+$T(u,z)$, which have no bar partner. Those terms are set to zero, so the $c_1$ channel does not see them at all.
+
+\subsection{The derived rule}
+On the $c^*$ line, $\eta=\bar\eta+\hat\eta$ gives
+\[ \bar X\!\cdot\! u\;\bar Z\!\cdot\! v\to \bar u\!\cdot\!\bar v,\qquad \hat X\!\cdot\! u\;\hat Z\!\cdot\! v\to\hat u\!\cdot\!\hat v,
+   \qquad\text{mixed}\to0 . \]
+The kinetic factor carries both copies ($H_{X\cdot},T_{X\cdot}$), so $T_{X,aK}\,T_{u,ZZ}\to T_{u,aK}$ survives. Nothing is
+fitted. Sanity check: the rebuilt blocks with the frozen rule reproduce the frozen Q11 $ccK$/$cc\bar c$ blocks exactly (equal row
+spaces). With the hat-aware rule both row spaces change.
+
+\section{Closure}
+\begin{center}\begin{tabular}{lrr}\toprule family & images & failing (hat-aware)\\\midrule
+$\tilde K hh$ ($F$) & 185 & 0\\ $\tilde K\tilde K c$ & 10 & 0\\ $c^*ch$ ($G$, $\epsilon_S=-1$) & 33 & 0\\
+$c^*ch$ ($G$, $\epsilon_S=+1$) & 33 & \EPSP\\\bottomrule\end{tabular}\end{center}
+Thus $\bar\sigma(Y)\subset\bar N_g$ for every generator: $\operatorname{rank}\bar\Sigma=\dim\bar T=\RS$. This
+completes the program begun in Q11. The $hhc$ gap was the non-nilpotency of the B-integrated-out BRST operator, cured by
+$\bar\Gamma$ (R03). The $c^*$ defect was the contraction artefact above. $\bar\sigma^2=0$ now holds on all field contents
+$(\tilde Khh,\ c^*ch,\ \tilde K\tilde Kc)$.
+
+\section{Cohomology and classification}
+With the hat-aware ghost rows,
+\[ \dim\bar N_g=\NB=(\TB+\BG-\TCB)+\HB ,\qquad \dim\big(\bar N_g\cap(\operatorname{span}\bar\Sigma+\text{blind})\big)=\SPN . \]
+The blind directions ($\BG$; coordinates unseen by every row) form a separate class. They are neither trivial nor cohomology
+representatives, and no statement is made about them. R04's 20 classes: \TRT{} lie in $\bar T+$blind (they were the two
+classes R04 added after excluding the then-failing $G$ images), and \TRN{} remain nontrivial. They span $\bar H$.
+\paragraph{Status.} These \HB{} classes are nontrivial in the cohomology of the nilpotent $\bar\sigma$ on the computed
+$Y$-space (all ghost-number $-1$ three-field contents, all Lorentz monomials at the power-counting momentum degree). A
+class could become trivial only through a local functional outside this space. We therefore do \emph{not} yet call them
+physical; certification awaits a $Y$-completeness proof.
+
+\section{Canonical basis of $\bar H$ (\HB{} classes)}
+\input{../build/R05_basis.tex}
+
+\section{Open items}
+\begin{enumerate}
+\item $Y$-completeness beyond power-counting monomials (e.g.\ nonlocal-in-$\hat{}$ structures, higher momentum degree
+      compensated by dimensionful couplings). Needed before any class is certified physical.
+\item The same hat-copy rule inside the frozen loop residuals of the ghost rows (Q06/Q07 remainders) is not revisited. It
+      does not affect the homogeneous classification, but it may affect the inhomogeneous counterterm solvability.
+\item p22 $\kappa^2$ evanescent-CT consistency: OPEN.
+\item O.1 stays scoped; bulk symmetry is not restored; Route B is not discharged; XV-B and XIV-J remain unopened.
+\end{enumerate}
+\end{document}

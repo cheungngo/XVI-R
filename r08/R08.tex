@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs}
+\input{../build/R08_numbers.tex}
+\title{XVI-R R08: Gram-reduced count, parity-odd decoupling, four-point rows}
+\author{XVI-R (local landmark; imports XVI-R R07 frozen and XVI-Q Q11; not published)}
+\date{}
+\begin{document}\maketitle
+\begin{abstract}
+R08 addresses the three items R07 left open. (2) \textbf{Gram-reduced count: CLOSED.} Exactly one strictly-4D Gram
+identity can act at this order: the $5\times5$ Gram determinant $G$ of $\{a_1,a_2,a_3,p_1,p_2\}$ in the $X_H$ sector. It is
+a Bose-symmetric cocycle with a vanishing $\bar\sigma$ image, so the three-point rows do not see it (it is blind); it is
+not trivial. Hence $\dim\bar H_{\rm Gram}=\HBg=\dim\bar H_{\rm formal}$; blind goes $24\to\BGg$ and $\dim\bar N_g$ goes
+$133\to\NBg$. (3) \textbf{Parity-odd: partial.} All inputs are parity-even and the odd sector decouples with zero
+inhomogeneity, so $X_{\rm odd}=0$ is consistent. The \emph{dimension} of the odd cohomology is Missing, because there is
+no DRED $\epsilon$ calculus; it is not zero. (1) \textbf{Four-point rows: OPEN.} The required vertices and loop poles do
+not exist in the frozen calculus. Nothing is assumed zero. Outcome: \textbf{Partial}.
+\end{abstract}
+
+\section{Scope}
+The premises are R07 (frozen; full zip \texttt{16a9c236\ldots}, gate ACCEPT) and XVI-Q Q11. Companion manuscripts,
+including I-B, OpenAI.tex and the new sheets, are not premises. O.1 is CLOSED only in its scoped sense; bulk symmetry is
+not restored; the insertion is frozen. No frozen code (XVI-Q/P/O/N, R01--R07) is edited.
+
+\section{Front 2: Gram-reduced scheme}
+The R06/R07 count is made in the formal $H/T$ algebra. A Gram-reduced scheme imposes the identity
+$\det[\hat v_i\cdot\hat v_j]_{5\times5}=0$, so every such combination becomes evanescent.
+
+\textbf{Which identities can act.} A Gram determinant has 10 vector slots, five rows and five columns. A $T$-containing
+monomial keeps at most $(\text{slots}-2)$ hat slots. The slot counts are $X_K$: 8, $X_C$: 8, $X_S$: 6, $X_H$: 10; the
+rows have $\le10$ slots, with at most 8 hat slots in their $T$-containing terms. So Gram identities touch only pure-$H$
+structures, and the only candidate is $X_H$ ($a_1^2a_2^2a_3^2$, momentum degree 4). There each $a_i$ must occur once in
+the rows and once in the columns, and $p_1,p_2$ likewise, since a repeated vector kills the determinant. This leaves the
+unique polynomial
+$$G=\det[\hat v_i\cdot\hat v_j],\qquad v=(a_1,a_2,a_3,p_1,p_2),$$
+which has \GT{} terms and lies in the 4D basis. For the hhc row (multidegree $c\,a_2^2a_3^2$, momentum 5), any candidate
+determinant would repeat a momentum, so there is no Gram relation among the rows.
+
+\textbf{Properties.} $G$ is Bose symmetric: leg swaps act on $\mathrm{span}(p_1,p_2)$ with determinant $\pm1$, which
+enters squared. Its $\bar\sigma$ image vanishes, because channel $A$ replaces $a_1\to\mathrm{sym}(p_1,c)$, which repeats
+$p_1$ in a row or column. $G$ does not enter the ghost rows or the ghost equation.
+
+\textbf{Count.} We add $G$ as one evanescent coordinate and repeat R07's complete-$Y$ classification under the full hat
+rule. A trivial direction is now any $(EV\,z,\lambda)$ with $FD\,z=\lambda\,g$, i.e.\ a 4D remainder proportional to $G$.
+R07 is reproduced: $\bar N_g=133$, $T=126$, blind $=24$, $\bar H=6$. In the Gram scheme $\bar N_g=\NBg$, $T=\TBg$, blind
+$=\BGg$, and $\bar H=\HBg$. $G$ is blind and not trivial. \textbf{The count is scheme-stable: $\dim\bar H=6$ in both the
+formal and the Gram-reduced scheme} (disclosure R08-D1).
+
+\section{Front 3: parity-odd sector}
+Every input is built from $H$, $T$ and loop $s$ dots only. This covers the stored Q05--Q07 loop poles, the R07 reduced
+residual, the counterterm and the p22 completion, and it was checked symbol by symbol. The frozen calculus has no
+Levi-Civita object. $\bar\sigma$ acts by vector substitutions and metric contractions, which preserve the number of
+$\epsilon$ tensors mod 2. Therefore:
+\begin{enumerate}
+\item the odd sector decouples from the even one;
+\item its inhomogeneity is zero, so $X_{\rm odd}=0$ is a consistent choice and the even results stand unchanged;
+\item the dimension of the odd evanescent cohomology requires a DRED $\epsilon$ (a $Q4S$ $\epsilon$ with tilde
+components) and its row maps. These are Missing, and the dimension is not zero by default.
+\end{enumerate}
+\textbf{Outcome: PARTIAL} (R08-D2).
+
+\section{Front 1: four-point rows}
+The frozen calculus has three-point vertices only. It lacks the $\kappa^2$ four-graviton vertex, the $\tilde Kchh$ and
+$\bar cchh$ vertices, the one-loop four-point UV poles for the rows $chhh$, $cc\bar ch$ and $ccKh$, and a four-point
+evanescent ansatz with its $\bar\sigma$ map. Without these, neither the extension of the six classes to four points nor
+the four-point inhomogeneity can be decided. \textbf{Outcome: OPEN} (R08-D3). The six classes are therefore classes of the
+three-point linearised problem; whether they extend to four points is unestablished.
+
+\section{Disclosures}
+\begin{description}
+\item[R08-D1] The Gram scheme adds one evanescent coordinate, which is blind: $\bar N_g$ goes $133\to\NBg$ and blind
+goes $24\to\BGg$. $\bar H$ is unchanged at 6.
+\item[R08-D2] The parity-odd dimension is recorded as Missing; only decoupling and zero inhomogeneity are established.
+\item[R08-D3] The four-point rows are not computed; the missing ingredients are listed in \texttt{R08\_four\_point.json}.
+\item[R08-D4] All R08 code is in \texttt{r08/}; the R01--R07 gates and code are untouched.
+\item[R08-D5] Packaging note: 45 companion files (I-B, En*, Hawk*, Oai*, XVIII*, XIX*, XX*, XXII*, XVI-Q.tex, ids\_*.txt) had been saved under \texttt{intake/}, where the frozen R01 glob \texttt{intake/*} would pick them up although they are not pinned. They were moved out of the packaged tree to \texttt{/workspace/XVI-R-companion-intake/}; the pinned intake files are untouched. They are not premises. No code was changed.
+\end{description}
+
+\section{Open items}
+Four-point rows; the parity-odd dimension; finite parts; two loops. Bulk symmetry stays not restored, the insertion stays
+frozen, and Route B is not discharged.
+\end{document}

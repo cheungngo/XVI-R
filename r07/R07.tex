@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs}
+\allowdisplaybreaks
+\input{../build/R07_numbers.tex}
+\title{XVI-R R07: the reduced $hhc$ loop residual, the p22 $\kappa^2$ evanescent counterterms,\\
+and a second contraction artefact ($\bar H$: 18 $\to$ \HB)}
+\author{XVI-R (local landmark; imports XVI-Q frozen at Q11; not published)}
+\date{}
+\begin{document}\maketitle
+\begin{abstract}
+R07 addresses two fronts. \textbf{Front 1} is the $h\!\cdot\!h\!\cdot\!c$ loop residual in the reduced variables $\bar\Gamma$.
+It is \textbf{CLOSED}. The reduced row is $\bar R=A+B+C+D_{EH}$. The difference between the full and reduced rows is
+exactly $D_{gf}+\sigma_F E$, which is purely evanescent (\GFE{} terms) and explains the R06 mismatch. The tree splits
+exactly. The inhomogeneous reduced fit, including the ghost equation, is solvable with a purely evanescent counterterm
+that is verified on every row.
+\textbf{Front 2} is consistency with the p22 $\kappa^2$ evanescent counterterms. It is \textbf{CLOSED} at the level of
+three-point rows, one loop and UV poles. In our calculus the p22 operators are exactly minus the $\tilde g$-structure
+parts of the two-point poles. For D01, D03, D11, D13 and D06 the ratio to XVI-P equals the frozen Q05 validation ratio.
+When inserted into the $\kappa^3$ rows, they admit an evanescent cubic completion.
+On the way we found a \textbf{second contraction artefact}. The frozen probe contraction also mistreats the external
+$\tilde K\leftrightarrow E$ graviton line. Applying the R05 rule ($\bar\eta\cdot\bar\eta$, $\hat\eta\cdot\hat\eta$,
+mixed $=0$) on every external probe line changes the reduced $hhc$ block (rank \BRo$\to$\BRn, joint rank \BRj). The
+cohomology becomes $\dim\bar H=\HB$, which \emph{supersedes} the 18 of R05/R06 (disclosure R07-D1). Outcome:
+\textbf{Partial}.
+\end{abstract}
+
+\section{Scope}
+Premises are XVI-Q Q11 (pinned zip) and the R01--R06 layers, whose gates must ACCEPT. OpenAI.tex and the new sheets are
+not premises. O.1 is CLOSED only in its scoped sense. Bulk symmetry is not restored and the insertion is frozen. No frozen
+code is edited: module attributes are swapped only for the duration of a call. All R07 code is in \texttt{r07/}.
+
+\section{The second contraction artefact (R07-D1, R07-D2)}
+\texttt{gravity.contract} rewrites each probe pair by dropping every $T$ copy and treating the $H$ copy as the full
+four-dimensional dot. This is exact only when \emph{both} sides carry four-dimensional dots ($H+T$ pairs). R05 found
+the failure on the $c^*$ line. The same failure occurs on the external graviton-probe line $\tilde K\leftrightarrow E$
+(\texttt{rows.contract\_id(\dots,'K','E','h')}). There the $\tilde K$ side can carry a $\hat g$ contraction or a
+$\tilde g$ contraction:
+\begin{itemize}
+\item every evanescent $X_K$ monomial with $T(a_K,\cdot)$, in the $D_{EH}$ channel of the reduced row and in the F and
+KKc $\bar\sigma$-images;
+\item the $E_2$ structure of the D13 pole, in channel $C$;
+\item the $\hat g$ from symmetric integration.
+\end{itemize}
+With $\eta=\bar\eta+\hat\eta$ the correct rule is $H\cdot H\to H$, $T\cdot T\to T$, mixed $\to0$. For example,
+$T(K,c)\,[H(E,x)+T(E,x)]\to T(c,x)$, whereas the frozen rule gives $0$. This is unit-tested. On
+$H+T$ pairs both rules agree, so internal loop lines are unaffected.
+
+\textbf{Effects.} The reduced $hhc$ linear block changes from rank \BRo{} to \BRn{}, and its row space changes (joint rank
+\BRj). The ghost-row blocks equal those of R05. The loop channels $C$ and $D_{EH}$ change by evanescent terms only (their
+4D projections are unchanged), so every earlier 4D-closure statement stands.
+
+\section{Corrected classification}
+We repeat R06's complete-$Y$ computation (evanescent and 4D generators: \NGF{} F, \NGG{} G, \NGK{} KKc with nonzero image;
+\PEC{} combinations with purely evanescent images) under both rules.
+\begin{center}\begin{tabular}{lccccc}\toprule
+rule & $\dim\bar N_g$ & $\dim T$ & blind & $T\cap$blind & $\dim\bar H$\\\midrule
+$c^*$ line only (R05/R06) & 133 & 113 & 38 & 36 & 18\\
+all external probe lines (R07) & \NB & \TB & \BG & \TCB & \textbf{\HB}\\\bottomrule\end{tabular}\end{center}
+The first row reproduces R05/R06 exactly; this is the sanity check. Under the corrected rule $\bar\sigma$ remains nilpotent
+on the complete $Y$, since every image lies in $\bar N_g$. R05's 18 representatives are no longer cocycles of the
+corrected system. The completeness arguments of R06 (total derivatives, field redefinitions/EOM, the formal $H/T$
+algebra, parity) are unchanged, so the corrected statement is: \textbf{the invariant, parity-even evanescent cohomology
+at $O(\kappa^3)$ on the complete local $Y$-space has dimension \HB}. ``Physical'' is meant only in this sense; no
+direction is certified as an observable. The basis is in \texttt{R07\_H\_basis.json}.
+
+\section{Front 1: the reduced $hhc$ loop residual}
+With $\tilde K=K+\bar cF'(h)$ the gauge-fixing part of $S_2$ and the $\bar c$ channel are absorbed into $\tilde K$:
+$$\bar R=A+B_2+B_3+C+D_{2,EH}+D_{3,EH}.$$
+\begin{itemize}
+\item Tree: $A_t+B_t^{EH}=0$ and $B_t^{gf}+\sigma_FE_t=0$ hold separately and exactly.
+\item Loop: full $-\bar R=D_{gf}+\sigma_F E$ exactly (\GFE{} terms, all evanescent). R06 had paired the full residual with
+the reduced channels; that mismatch is now explained.
+\item Fit with the $c^*$-line rule: $\bar R$ (\RBo{} terms) plus reduced channels, both ghost rows, Bose symmetry and the
+ghost equation is solvable, with $\dim\bar N_g=133$.
+\item Fit with the corrected rule: $\bar R$ (\RBn{} terms, 4D part zero) is solvable with the ghost equation, and
+$\dim\bar N_g=\NB$. The particular counterterm has \FKa/\FCa/0/\FHa{} terms in $K/C/S/H$, is purely evanescent, and
+makes every row vanish.
+\end{itemize}
+\textbf{Outcome: CLOSED.}
+
+\section{Front 2: p22 consistency}
+\subsection{Identification}
+In our calculus the $\tilde g$-structure part of a pole $o$ is $P_{ev}(o)=o-\mathrm{lift}(o|_{T=0})$, where lift sends
+$H(x,y)\mapsto H+T$ on polarisation and probe pairs, because the 4D structures are $g_4$ and $p$ monomials.
+\begin{center}\begin{tabular}{lccc}\toprule
+graph & own/XVI-P (full) & own/XVI-P (evanescent part) & p22 CT $=-$pole\\\midrule
+D01 graviton & $i$ & $i$ & yes\\
+D03 ghost loop & $i$ & $i$ & yes\\
+D11 scalar & $i$ & $i$ & yes\\
+D13 $\tilde K c$ ($E_2$) & $-i$ & $-i$ & yes\\
+D06 $\bar cc$ (SE) & $i$ & $i$ & yes\\\bottomrule\end{tabular}\end{center}
+The evanescent ratios equal the frozen Q05 normalisation ratios. The p22 counterterms are therefore exactly
+$X_2=-P_{ev}(\text{pole})$ in our normalisation.
+
+\subsection{Cubic completion}
+We insert $X_2$ in place of every two-point pole in the $\kappa^3$ rows: $hhc$ channels $B$ and $C$, and ghost-row
+channels $K$ and $c_2$. All genuine three-point loops are set to zero and the corrected rule is used. The inhomogeneity
+$\Xi$ has \XIh/\XIk/\XIb{} terms ($hhc$/$ccK$/$cc\bar c$), all evanescent. The system $\bar\sigma X_3'+\Xi=0$, with
+Bose symmetry and the ghost equation, is \textbf{solvable}. The completion $X_3'$ (\PKa/\PCa/0/\PHa{} terms) is purely
+evanescent and verified. It is unique modulo $\bar N_g$; its class in $\bar H$ (dimension \HB) is not fixed by p22.
+\textbf{Outcome: CLOSED} at three-point, one-loop pole level. Not implied: four-point rows, finite parts, two loops.
+
+\section{Disclosures}
+\begin{description}
+\item[R07-D1] The hat rule is extended to every external probe line. The reduced $hhc$ block and the F/KKc images are
+rebuilt, and $\bar H$ goes from 18 to \HB. The R05/R06 count of 18 is superseded. Frozen code is not edited.
+\item[R07-D2] Loop channels $C$ and $D_{EH}$ change (evanescent only; 4D closure unaffected).
+\item[R07-D3] $\bar R$ is defined as $A+B+C+D_{EH}$; full $-$ reduced $=D_{gf}+\sigma_FE$.
+\item[R07-D4] All R07 code is in \texttt{r07/}; the R01--R06 gates are untouched.
+\end{description}
+
+\section{Open items}
+Parity-odd evanescent cohomology; counting in a Gram-reduced scheme; four-point rows; finite parts. Bulk symmetry stays
+not restored, the insertion stays frozen, and Route B is not discharged.
+\end{document}
