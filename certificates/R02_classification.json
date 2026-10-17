@@ -1,0 +1,16 @@
+{
+ "classification_43": {
+  "blind": 0,
+  "cohomology_candidate": 22,
+  "of_which_robust": 22,
+  "physical_proven": 0,
+  "trivial_computed_sigma": 21
+ },
+ "dim_N_g": 104,
+ "dim_Ng_cap_spanSigma_plus_blind": 82,
+ "dim_W_Q11": 61,
+ "dim_Wprime_cap_Ng": 82,
+ "physical": "none certified",
+ "status": "CONDITIONAL: trivial = in the computed sigma-span satisfying all constraints; candidates are NOT proven nontrivial in cohomology because the Q11 composition gap (sigma(Y) not inside N) is open",
+ "unclassified_Q11": 43
+}

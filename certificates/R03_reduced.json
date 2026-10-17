@@ -1,0 +1,29 @@
+{
+ "F_images_failing_reduced": 0,
+ "G": {
+  "coefficient_scan_nullspace": [],
+  "eps_minus1_failing": 13,
+  "eps_plus1_failing": 19,
+  "fail_blocks": {
+   "G: ccK ccb": 13
+  }
+ },
+ "KKc": {
+  "blocks": {
+   "pass": 10
+  },
+  "leak": 0,
+  "n": 24
+ },
+ "dim_N_g": 104,
+ "dim_N_g_cap_Nbar_g": 101,
+ "dim_Nbar_g": 139,
+ "equivalence_full_vs_reduced_on_kerAg_rank": 47,
+ "gap_outcome": "hhc gap CLOSED in reduced (Gamma-bar) variables: all F and KKc images satisfy the reduced system; residual G-sector (c*.c.h) defect in ghost rows ccK/ccb remains OPEN (no coefficient fix)",
+ "lambda_test": {
+  "lambda_candidate": "I",
+  "lambda_closes_on_kerAg": false,
+  "sigma_F": "I"
+ },
+ "n_F": 185
+}

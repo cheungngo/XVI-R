@@ -1,0 +1,22 @@
+{
+ "H_formal": 6,
+ "H_gram_reduced": 6,
+ "O1_closure_unchanged": "CLOSED (scoped)",
+ "P6_outcome": "Partial",
+ "bulk_symmetry_restored": false,
+ "claim_status": "partial",
+ "disclosed": [
+  "R08-D1: Gram scheme adds one evanescent coordinate (the X_H Gram determinant); counted as blind (Nbar_g 133 -> 134, blind 24 -> 25); Hbar unchanged at 6",
+  "R08-D2: parity-odd count recorded as Missing; only decoupling and zero inhomogeneity established",
+  "R08-D3: four-point rows not computed; missing ingredients listed",
+  "R08-D4: R08 code in r08/ (R01-R07 gates and code untouched)"
+ ],
+ "goals": {
+  "1_four_point_rows": "OPEN",
+  "2_gram_reduced_scheme_count": "CLOSED",
+  "3_parity_odd_cohomology": "PARTIAL"
+ },
+ "insertion": "frozen",
+ "landmark": "XVI-R",
+ "release": "R08"
+}

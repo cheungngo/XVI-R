@@ -1,0 +1,19 @@
+{
+ "O1_closure_unchanged": "CLOSED (scoped)",
+ "P6_outcome": "Partial",
+ "bulk_symmetry_restored": false,
+ "claim_status": "partial",
+ "disclosed_revisions": [
+  "R02-R1: R01 gate's unpinned-file check excludes R02 files (pinned by R02 gate)"
+ ],
+ "goals": {
+  "1_computed_trivial_span": "ESTABLISHED (computed sigma map on F/G/P monomial Y-space)",
+  "2_classify_43": "Partial: 21 trivial (computed sigma), 0 blind, 22 cohomology candidates; 0 physical",
+  "3_invariant_basis": "Partial: canonical 22-dim candidate basis; invariance (nontriviality) conditional on closing the sigma-composition gap",
+  "4_p22_kappa2_consistency": "OPEN"
+ },
+ "insertion": "frozen",
+ "landmark": "XVI-R",
+ "not_implied": "no direction certified physical; Missing never zero",
+ "release": "R02"
+}

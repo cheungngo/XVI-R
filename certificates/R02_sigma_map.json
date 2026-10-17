@@ -1,0 +1,29 @@
+{
+ "by_family": {
+  "F": {
+   "dim_trivial_in_Ng": 62,
+   "n_generators": 194,
+   "rank_sigma": 102
+  },
+  "G": {
+   "dim_trivial_in_Ng": 14,
+   "n_generators": 33,
+   "rank_sigma": 33
+  },
+  "P": {
+   "dim_trivial_in_Ng": 0,
+   "n_generators": 134,
+   "rank_sigma": 67
+  }
+ },
+ "dim_T_rows_only": 103,
+ "dim_T_trivial_in_Ng": 69,
+ "dim_kernel_constraints_on_Y": 243,
+ "leak": {
+  "F": 0,
+  "G": 0,
+  "P": 0
+ },
+ "n_Y_generators": 361,
+ "rank_Sigma": 187
+}

@@ -1,0 +1,28 @@
+{
+ "H_even": 6,
+ "H_odd": 4,
+ "O1_closure_unchanged": "CLOSED (scoped)",
+ "P6_outcome": "Partial",
+ "bulk_symmetry_restored": false,
+ "claim_status": "partial",
+ "disclosed": [
+  "R09-D1 (correction to R08): R08_four_point listed the kappa^2 four-graviton vertex as Missing; it exists in frozen XVI-Q p6q06/v4.py (V4_grav, gauge identity validated in Q06, used in Q06 G02). The R08 inventory scanned JSON inputs only. The R08 certificate is left frozen; corrected here",
+  "R09-D2: eps scheme = BM-projected eps in DRED, represented by four inert hat-only spectator vectors modulo antisymmetry; eps.eps never reduced (shown inconsistent with hat projection for d != 4); Schouten not imposed",
+  "R09-D3: Hbar_odd = 4 is scheme-dependent: with Schouten quotiented inside Nbar it would be 2, but the rows see Schouten combinations, so that variant is not consistent with this calculus",
+  "R09-D4: r09_fastbox rebinds the frozen uvpole.MOM to (p1,p2,p3) at run time in its own process; no frozen file edited",
+  "R09-D5: K c h h and cbar c h h are zero by derivation from the declared action (not 'Missing = 0')",
+  "R09-D6: the vertex cross-check compares 4D components (T = 0) at random rational kinematics; an earlier mismatch at one point came from nsimplify in the comparison code, fixed by exact Rationals",
+  "R09-D7: four-point rows not evaluated: infeasible on this machine (evidence in R09_four_point); exploratory box scripts kept outside the build in reproducibility/r09_exploratory",
+  "R09-D8: the odd classification reuses frozen/R07 code through module-attribute rebinding (monomials, coords, enum) inside r09_odd's own process; its even mode reproduces R07 exactly",
+  "R09-D9: R09 code in r09/ (R01-R08 gates and code untouched); companion intake stays outside XVI-R"
+ ],
+ "goals": {
+  "1_parity_odd_cohomology": "CLOSED (scheme-dependent): Hbar_odd = 4",
+  "2a_four_point_vertices": "CLOSED",
+  "2b_four_point_engine": "BUILT (three-point validation only)",
+  "2c_four_point_rows": "OPEN (infeasible here; evidence)"
+ },
+ "insertion": "frozen",
+ "landmark": "XVI-R",
+ "release": "R09"
+}

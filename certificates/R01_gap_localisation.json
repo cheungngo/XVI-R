@@ -1,0 +1,103 @@
+{
+ "reading": "A one-sector correction delta with A(v+delta)=0 LOCALISES the hhc defect; it is not a derived sigma-image and certifies nothing as trivial. Gap status: CHARACTERISED (localisation), NOT CLOSED.",
+ "results": {
+  "F": {
+   "CS": {
+    "correctable": 8,
+    "correctable_and_ghost_eq": 0,
+    "defect_span_inside_image": false
+   },
+   "all_coords": {
+    "correctable": 123,
+    "correctable_and_ghost_eq": 123,
+    "defect_span_inside_image": true
+   },
+   "hat_deg_1": {
+    "correctable": 96,
+    "correctable_and_ghost_eq": 70,
+    "defect_span_inside_image": false
+   },
+   "hat_deg_ge2": {
+    "correctable": 62,
+    "correctable_and_ghost_eq": 62,
+    "defect_span_inside_image": false
+   },
+   "n_fail": 123,
+   "rank_defect_span": 40,
+   "sector_C": {
+    "correctable": 8,
+    "correctable_and_ghost_eq": 0,
+    "defect_span_inside_image": false
+   },
+   "sector_H": {
+    "correctable": 18,
+    "correctable_and_ghost_eq": 18,
+    "defect_span_inside_image": false
+   },
+   "sector_K": {
+    "correctable": 0,
+    "correctable_and_ghost_eq": 0,
+    "defect_span_inside_image": false
+   },
+   "sector_S": {
+    "correctable": 0,
+    "correctable_and_ghost_eq": 0,
+    "defect_span_inside_image": false
+   }
+  },
+  "G": {
+   "CS": {
+    "correctable": 12,
+    "correctable_and_ghost_eq": 0,
+    "defect_span_inside_image": false
+   },
+   "all_coords": {
+    "correctable": 25,
+    "correctable_and_ghost_eq": 25,
+    "defect_span_inside_image": true
+   },
+   "hat_deg_1": {
+    "correctable": 25,
+    "correctable_and_ghost_eq": 25,
+    "defect_span_inside_image": true
+   },
+   "hat_deg_ge2": {
+    "correctable": 12,
+    "correctable_and_ghost_eq": 12,
+    "defect_span_inside_image": false
+   },
+   "n_fail": 25,
+   "rank_defect_span": 19,
+   "sector_C": {
+    "correctable": 12,
+    "correctable_and_ghost_eq": 0,
+    "defect_span_inside_image": false
+   },
+   "sector_H": {
+    "correctable": 0,
+    "correctable_and_ghost_eq": 0,
+    "defect_span_inside_image": false
+   },
+   "sector_K": {
+    "correctable": 0,
+    "correctable_and_ghost_eq": 0,
+    "defect_span_inside_image": false
+   },
+   "sector_S": {
+    "correctable": 0,
+    "correctable_and_ghost_eq": 0,
+    "defect_span_inside_image": false
+   }
+  }
+ },
+ "set_sizes": {
+  "CS": 99,
+  "all_coords": 821,
+  "hat_deg_1": 545,
+  "hat_deg_ge2": 276,
+  "sector_C": 81,
+  "sector_H": 588,
+  "sector_K": 134,
+  "sector_S": 18
+ }
+}

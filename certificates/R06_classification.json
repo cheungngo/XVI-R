@@ -1,0 +1,10 @@
+{
+ "H_dim": 18,
+ "Nbar_g": 133,
+ "T_plus_blind": 115,
+ "blind_g": 38,
+ "dim_T": 113,
+ "invariant_evanescent_cohomology": true,
+ "meaning": "the 18 classes are the invariant evanescent cohomology at O(kappa^3) on the complete local Y-space (power counting, modulo total derivatives, field redefinitions, EOM); 'physical' only in this sense, no direction certified physical as an observable",
+ "physical_certified": 0
+}

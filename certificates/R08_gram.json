@@ -1,0 +1,53 @@
+{
+ "G_blind": true,
+ "G_bose_symmetric": true,
+ "G_in_4D_basis": true,
+ "G_n_terms": 73,
+ "G_nonzero": true,
+ "G_sigma_image_zero": true,
+ "G_trivial": false,
+ "H_formal": 6,
+ "H_gram_reduced": 6,
+ "R07_reproduced": {
+  "dim_H": 6,
+  "dim_Nbar_g": 133,
+  "dim_T": 126,
+  "dim_T_cap_blind": 23,
+  "dim_blind_g": 24,
+  "rank_Sigma": 126,
+  "sigma_inside_Nbar": true
+ },
+ "gram_scheme": {
+  "dim_H": 6,
+  "dim_Nbar_g": 134,
+  "dim_T": 126,
+  "dim_T_cap_blind": 23,
+  "dim_blind_g": 25,
+  "rank_Sigma": 126,
+  "sigma_inside_Nbar": true
+ },
+ "outcome": "CLOSED",
+ "slot_census": {
+  "C": {
+   "gram_possible_4D": false,
+   "max_hat_slots_evanescent": 6,
+   "total_slots": 8
+  },
+  "H": {
+   "gram_possible_4D": true,
+   "max_hat_slots_evanescent": 8,
+   "total_slots": 10
+  },
+  "K": {
+   "gram_possible_4D": false,
+   "max_hat_slots_evanescent": 6,
+   "total_slots": 8
+  },
+  "S": {
+   "gram_possible_4D": false,
+   "max_hat_slots_evanescent": 4,
+   "total_slots": 6
+  }
+ },
+ "statement": "Gram-reduced scheme: exactly one Gram polynomial (X_H); it is a cocycle that the three-point rows do not see (blind), not trivial; Hbar_gram = 6 = Hbar_formal = 6; blind 24 -> 25"
+}

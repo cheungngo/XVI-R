@@ -1,0 +1,20 @@
+{
+ "O1_closure_unchanged": "CLOSED (scoped)",
+ "P6_outcome": "Partial",
+ "bulk_symmetry_restored": false,
+ "claim_status": "partial",
+ "disclosed": [
+  "R03-D1: N_g (Q08 full rows, 104) differs from Nbar_g (reduced, 139); intersection 101",
+  "R03-D2: R03 code lives in r03/ so the R01/R02 gates are untouched (no frozen-layer edit)"
+ ],
+ "goals": {
+  "1_diagnosis": "ESTABLISHED: B-integrated-out (on-shell) BRST; defect = antighost/gauge-fixing sector at the ghost leg",
+  "2_gap": "Partial: hhc gap CLOSED in reduced variables (F, KKc); G-sector ghost-row defect OPEN",
+  "3_classification": "Partial: of R02's 22, 3 not reduced cocycles, 1 trivial/blind, 18 conditional classes; 0 physical",
+  "4_p22_kappa2_consistency": "OPEN"
+ },
+ "insertion": "frozen",
+ "landmark": "XVI-R",
+ "not_implied": "no direction certified physical; Missing never zero",
+ "release": "R03"
+}

@@ -1,0 +1,15 @@
+{
+ "landmark": "XVI-R",
+ "release": "R09",
+ "status": "released (honest partial)",
+ "H": "even 6 (formal and Gram-reduced); odd 4 (formal eps scheme, scheme-dependent)",
+ "goals": {
+  "1_parity_odd_cohomology": "CLOSED (scheme-dependent): Hbar_odd = 4",
+  "2a_four_point_vertices": "CLOSED",
+  "2b_four_point_engine": "BUILT (three-point validation only)",
+  "2c_four_point_rows": "OPEN (infeasible here; evidence)"
+ },
+ "O1_closure": "CLOSED (scoped)",
+ "bulk_symmetry_restored": false,
+ "claim_status": "partial"
+}

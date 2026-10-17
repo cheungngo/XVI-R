@@ -1,0 +1,21 @@
+{
+ "H_bar_dim_nonblind": 18,
+ "physical_certified": 0,
+ "reduced": {
+  "dim_H_bar_nonblind": 18,
+  "dim_Nbar_g": 139,
+  "dim_T_bar": 107,
+  "dim_T_cap_blind": 36,
+  "dim_blind_g": 50,
+  "dim_span_Sigma_plus_blind_cap_Nbar": 121,
+  "rank_Sigma_bar": 113
+ },
+ "status": "CONDITIONAL on the G-sector (ccK/ccb) defect; robust: the classes lie outside span(all computed images) + blind",
+ "transport_R02_22": {
+  "dim": 22,
+  "fail_reduced_constraints": 3,
+  "inside_Nbar_g": 19,
+  "nontrivial_classes_in_H_bar": 18,
+  "trivial_or_blind_in_reduced": 1
+ }
+}

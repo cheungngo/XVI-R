@@ -1,0 +1,7 @@
+{
+ "Q11_release_decision_rebuilt": "ACCEPT",
+ "mismatched_certificates": [],
+ "n_reference_certificates": 53,
+ "note": "XVI-Q Q11 rebuilt from the pinned source-only zip inside build/xviq; certificates compared to the values pinned in the zip's q11_expected.json (seconds stripped; guard-scan file counts excluded as in Q10-R1/Q11-R1)",
+ "xviq_source_zip_sha256": "1888f3277b793ee8cbf3954b3819bec03e41d8c4dc59757744dfda8b147a35ad"
+}

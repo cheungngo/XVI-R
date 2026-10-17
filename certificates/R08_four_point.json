@@ -1,0 +1,13 @@
+{
+ "K_c_hh_vertex": false,
+ "V4_graviton_vertex": false,
+ "cbar_c_hh_vertex": false,
+ "four_point_loop_pole_runs": false,
+ "missing": [
+  "kappa^2 four-graviton vertex",
+  "K~ c h h and cbar c h h vertices",
+  "one-loop four-point UV poles (boxes, triangles with V4, bubbles) for rows c.h.h.h, c.c.cbar.h, c.c.K.h",
+  "four-point evanescent ansatz and its sigma-bar map"
+ ],
+ "outcome": "OPEN (ingredients Missing; nothing assumed zero)"
+}

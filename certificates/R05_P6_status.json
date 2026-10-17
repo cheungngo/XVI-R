@@ -1,0 +1,23 @@
+{
+ "O1_closure_unchanged": "CLOSED (scoped)",
+ "P6_outcome": "Partial",
+ "bulk_symmetry_restored": false,
+ "claim_status": "partial",
+ "disclosed": [
+  "R05-D1: ghost-row linear blocks rebuilt with hat-aware c*-line contraction (frozen code not edited; frozen loop residual not revised)",
+  "R05-D2: Nbar_g 139 (R03/R04) -> 133; blind_g 50 -> 38; R04's 2 extra classes become trivial",
+  "R05-D3: R05 code in r05/ (R01-R04 gates untouched)"
+ ],
+ "goals": {
+  "1_decide": "ESTABLISHED: calculus artefact (T copies dropped on the c* line)",
+  "2_fix_and_close": "ESTABLISHED: hat-aware contraction (derived), 33/33 G closed, sigma-bar nilpotent on Y",
+  "3_classification": "Partial: H=18 nontrivial classes on the computed Y-space; 0 certified physical (Y-completeness open)",
+  "4_Y_completeness": "OPEN",
+  "5_loop_residual_hat_rule": "OPEN (frozen Q06/Q07 ghost-row remainders computed with the drop-T rule not revisited)",
+  "6_p22_kappa2_consistency": "OPEN"
+ },
+ "insertion": "frozen",
+ "landmark": "XVI-R",
+ "not_implied": "no direction certified physical; Missing never zero",
+ "release": "R05"
+}

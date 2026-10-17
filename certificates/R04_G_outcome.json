@@ -1,0 +1,152 @@
+{
+ "G": {
+  "fail_blocks": "ccK+ccb for all failures",
+  "failures": [
+   {
+    "T_gc_gv": true,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_a3*H_p1_p1*T_gc1_gv",
+    "ok": false,
+    "trace_h": true
+   },
+   {
+    "T_gc_gv": true,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_a3*H_p1_p2*T_gc1_gv",
+    "ok": false,
+    "trace_h": true
+   },
+   {
+    "T_gc_gv": true,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_a3*H_p2_p2*T_gc1_gv",
+    "ok": false,
+    "trace_h": true
+   },
+   {
+    "T_gc_gv": false,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_gc1*H_p1_p1*T_a3_gv",
+    "ok": false,
+    "trace_h": false
+   },
+   {
+    "T_gc_gv": false,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_gc1*H_p1_p2*T_a3_gv",
+    "ok": false,
+    "trace_h": false
+   },
+   {
+    "T_gc_gv": false,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_gc1*H_p2_p2*T_a3_gv",
+    "ok": false,
+    "trace_h": false
+   },
+   {
+    "T_gc_gv": true,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_p1**2*T_gc1_gv",
+    "ok": false,
+    "trace_h": false
+   },
+   {
+    "T_gc_gv": true,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_p1*H_a3_p2*T_gc1_gv",
+    "ok": false,
+    "trace_h": false
+   },
+   {
+    "T_gc_gv": false,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_p1*H_gc1_p1*T_a3_gv",
+    "ok": false,
+    "trace_h": false
+   },
+   {
+    "T_gc_gv": false,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_p1*H_gc1_p2*T_a3_gv",
+    "ok": false,
+    "trace_h": false
+   },
+   {
+    "T_gc_gv": true,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_p2**2*T_gc1_gv",
+    "ok": false,
+    "trace_h": false
+   },
+   {
+    "T_gc_gv": false,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_p2*H_gc1_p1*T_a3_gv",
+    "ok": false,
+    "trace_h": false
+   },
+   {
+    "T_gc_gv": false,
+    "fail": [
+     "ccK",
+     "ccb"
+    ],
+    "m": "H_a3_p2*H_gc1_p2*T_a3_gv",
+    "ok": false,
+    "trace_h": false
+   }
+  ],
+  "n_fail": 13,
+  "n_images": 33,
+  "n_pass": 20,
+  "outcome": "PARTIAL: 20/33 closed; 13/33 OPEN (T(c*) obstruction)",
+  "pattern": {
+   "PASS": 20,
+   "ccK ccb": 13
+  }
+ },
+ "outcome": "PARTIAL: derived image closes 20/33; 13/33 OPEN as T(c*) obstruction; no coefficient fix",
+ "pattern_summary": {
+  "all_failures_have_single_T_on_cstar": true,
+  "fail_all_ccK_ccb": true,
+  "n_fail": 13,
+  "n_ok": 20
+ }
+}

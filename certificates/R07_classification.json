@@ -1,0 +1,43 @@
+{
+ "H_basis_dim": 6,
+ "H_dim": 6,
+ "R05rule_sanity": {
+  "R05_18_in_Nbar": true,
+  "R05_18_trivial_count": 0,
+  "dim_H": 18,
+  "dim_Nbar_g": 133,
+  "dim_T": 113,
+  "dim_T_cap_blind": 36,
+  "dim_blind_g": 38,
+  "dim_pure_evanescent_combos": 269,
+  "images_inside_Nbar": true,
+  "n_generators": {
+   "F": 242,
+   "G": 54,
+   "KKc": 24
+  },
+  "rank_Sigma": 113,
+  "sigma_inside_Nbar": true
+ },
+ "hatgen": {
+  "R05_18_in_Nbar": false,
+  "R05_18_trivial_count": 10,
+  "dim_H": 6,
+  "dim_Nbar_g": 133,
+  "dim_T": 126,
+  "dim_T_cap_blind": 23,
+  "dim_blind_g": 24,
+  "dim_pure_evanescent_combos": 292,
+  "images_inside_Nbar": true,
+  "n_generators": {
+   "F": 251,
+   "G": 54,
+   "KKc": 38
+  },
+  "rank_Sigma": 126,
+  "sigma_inside_Nbar": true
+ },
+ "meaning": "invariant evanescent cohomology at O(kappa^3) on the complete local Y-space, formal H/T algebra, parity-even; 'physical' only in this sense",
+ "physical_certified": 0,
+ "supersedes": "R05/R06 H=18 (computed with the K~-line contraction artefact); R05's 18 representatives are not in the corrected Nbar_g"
+}

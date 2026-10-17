@@ -1,0 +1,10 @@
+{
+ "established": "odd sector decouples from the even one; odd inhomogeneity zero; X_odd = 0 consistent",
+ "inputs_parity_even": true,
+ "levi_civita_in_frozen_calculus": false,
+ "non_dot_symbols_in_inputs": {},
+ "odd_cohomology_dimension": "Missing (no DRED epsilon calculus)",
+ "odd_inhomogeneity_zero": true,
+ "open": "dimension of the parity-odd evanescent cohomology (Missing, not zero)",
+ "outcome": "PARTIAL"
+}

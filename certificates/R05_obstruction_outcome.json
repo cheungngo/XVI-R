@@ -1,0 +1,28 @@
+{
+ "G_eps_plus1_failing": 19,
+ "cause": "calculus artefact: gravity.contract drops every T copy of a probe dot (keeps the H copy as the full 4S dot). Exact for loop expressions (dots come as H+T pairs) but annihilates the single-hatted c* contractions T(u,z) of the evanescent ansatz X_S in the ghost-row c1 channel (c* line X<->ZZ).",
+ "fix": "eta = eta_bar + eta_hat on the c* line: H.H->H, T.T->T, mixed->0; linear (X-dependent) part only; frozen loop residual untouched",
+ "hat_changes_rowspace": {
+  "ccK": true,
+  "ccb": true
+ },
+ "images": {
+  "F": {
+   "failing": 0,
+   "n": 185
+  },
+  "G": {
+   "failing": 0,
+   "n": 33
+  },
+  "KKc": {
+   "failing": 0,
+   "n": 10
+  }
+ },
+ "outcome": "ARTEFACT -- CLOSED: all 33 G images (and all F, KKc) satisfy the hat-aware reduced system; sigma-bar(Y) inside Nbar_g on the whole computed Y-space",
+ "sanity_old_blocks_equal_Q11": {
+  "ccK": true,
+  "ccb": true
+ }
+}

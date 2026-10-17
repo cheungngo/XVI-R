@@ -1,0 +1,23 @@
+{
+ "H_dim": 18,
+ "dim_Nbar_cap_span_all_plus_blind": 115,
+ "note": "nilpotency verified: rank Sigma = dim(Sigma cap Nbar_g); the 18 classes are nontrivial modulo the full image",
+ "physical_certified": 0,
+ "reduced_hat": {
+  "dim_H": 18,
+  "dim_Nbar_g": 133,
+  "dim_T": 113,
+  "dim_T_cap_blind": 36,
+  "dim_blind_g": 38,
+  "rank_Sigma": 113,
+  "sigma_inside_Nbar": true
+ },
+ "status": "UNCONDITIONAL on the computed (power-counting) Y-space; physical certification pending Y-completeness",
+ "transport_R04_20": {
+  "dim": 20,
+  "inside_Nbar_hat": 20,
+  "nontrivial": 18,
+  "not_cocycles": 0,
+  "trivial_or_blind": 2
+ }
+}

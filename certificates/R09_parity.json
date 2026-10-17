@@ -1,0 +1,453 @@
+{
+ "H_odd_basis": [
+  [
+   [
+    "K",
+    "H_a3_e1*H_aK_e2*H_e3_p1*H_e4_p2*H_gc1_p1*T_a3_aK",
+    "-I/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_a1*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a2_a3",
+    "1/4294967296"
+   ],
+   [
+    "H",
+    "H_a1_a1*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p2_p2*T_a2_a3",
+    "1/4294967296"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_a2*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p1*T_a1_a3",
+    "-1/4294967296"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_a2*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a1_a3",
+    "-1/4294967296"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_e2*H_a3_a3*H_e3_p1*H_e4_p2*H_p1_p2*T_a1_a2",
+    "-1/4294967296"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_e2*H_a3_p1**2*H_e3_p1*H_e4_p2*T_a1_a2",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_e2*H_a3_p1*H_a3_p2*H_e3_p1*H_e4_p2*T_a1_a2",
+    "1/4294967296"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_e2*H_a3_p2**2*H_e3_p1*H_e4_p2*T_a1_a2",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_p2**2*H_a3_e2*H_e3_p1*H_e4_p2*T_a1_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_p1**2*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*T_a2_a3",
+    "1/8589934592"
+   ]
+  ],
+  [
+   [
+    "K",
+    "H_a3_e1*H_aK_e2*H_e3_p1*H_e4_p2*H_gc1_p1*T_a3_aK",
+    "I/17179869184"
+   ],
+   [
+    "K",
+    "H_a3_e1*H_aK_e2*H_e3_p1*H_e4_p2*H_gc1_p2*T_a3_aK",
+    "I/17179869184"
+   ],
+   [
+    "H",
+    "H_a1_a1*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a2_a3",
+    "-1/17179869184"
+   ],
+   [
+    "H",
+    "H_a1_a1*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p2_p2*T_a2_a3",
+    "-1/17179869184"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_a2*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p1*T_a1_a3",
+    "1/17179869184"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_a2*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a1_a3",
+    "1/17179869184"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_e2*H_a3_a3*H_e3_p1*H_e4_p2*H_p1_p2*T_a1_a2",
+    "1/17179869184"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_e2*H_a3_p1*H_a3_p2*H_e3_p1*H_e4_p2*T_a1_a2",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_p1**2*H_a3_e2*H_e3_p1*H_e4_p2*T_a1_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_p1*H_a2_p2*H_a3_e2*H_e3_p1*H_e4_p2*T_a1_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_p1*H_a1_p2*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*T_a2_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_p2**2*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*T_a2_a3",
+    "1/8589934592"
+   ]
+  ],
+  [
+   [
+    "K",
+    "H_a3_e1*H_aK_e2*H_e3_gc1*H_e4_p1*H_p1_p1*T_a3_aK",
+    "-I/34359738368"
+   ],
+   [
+    "K",
+    "H_a3_e1*H_aK_e2*H_e3_gc1*H_e4_p1*H_p1_p2*T_a3_aK",
+    "-I/17179869184"
+   ],
+   [
+    "K",
+    "H_a3_e1*H_aK_e2*H_e3_gc1*H_e4_p1*H_p2_p2*T_a3_aK",
+    "-I/34359738368"
+   ],
+   [
+    "K",
+    "H_a3_e1*H_aK_p1*H_e2_gc1*H_e3_p1*H_e4_p2*T_a3_aK",
+    "I/17179869184"
+   ],
+   [
+    "K",
+    "H_a3_e1*H_aK_p2*H_e2_gc1*H_e3_p1*H_e4_p2*T_a3_aK",
+    "I/34359738368"
+   ],
+   [
+    "K",
+    "H_a3_p1*H_aK_e1*H_e2_gc1*H_e3_p1*H_e4_p2*T_a3_aK",
+    "-I/34359738368"
+   ],
+   [
+    "K",
+    "H_a3_p2*H_aK_e1*H_e2_gc1*H_e3_p1*H_e4_p2*T_a3_aK",
+    "-I/34359738368"
+   ],
+   [
+    "C",
+    "H_a3_e1*H_e2_gc1*H_e3_p1*H_e4_p2*H_p1_p1*T_a3_gb2",
+    "I/34359738368"
+   ],
+   [
+    "H",
+    "H_a1_a2*H_a1_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a2_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_a2*H_a1_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p2_p2*T_a2_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_a2*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p1*T_a1_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_a2*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a1_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_a3*H_a1_e1*H_a2_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a2_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_a3*H_a1_e1*H_a2_e2*H_e3_p1*H_e4_p2*H_p2_p2*T_a2_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_a3*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a1_a2",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a1_p1*H_a2_e2*H_a3_p2*H_e3_p1*H_e4_p2*T_a2_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a1_p2*H_a2_e2*H_a3_p2*H_e3_p1*H_e4_p2*T_a2_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a1_p2*H_a2_p1*H_a3_e2*H_e3_p1*H_e4_p2*T_a2_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a1_p2*H_a2_p2*H_a3_e2*H_e3_p1*H_e4_p2*T_a2_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_a3*H_a2_e2*H_e3_p1*H_e4_p2*H_p1_p1*T_a1_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_a3*H_a2_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a1_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_a3*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a1_a2",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_e2*H_a2_p1*H_a3_p1*H_e3_p1*H_e4_p2*T_a1_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_e2*H_a2_p2*H_a3_p1*H_e3_p1*H_e4_p2*T_a1_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a2_p1*H_a3_e2*H_a3_p2*H_e3_p1*H_e4_p2*T_a1_a2",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_p1*H_a2_e1*H_a2_p1*H_a3_e2*H_e3_p1*H_e4_p2*T_a1_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_p2*H_a2_e1*H_a2_p1*H_a3_e2*H_e3_p1*H_e4_p2*T_a1_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_p2*H_a2_e1*H_a3_e2*H_a3_p1*H_e3_p1*H_e4_p2*T_a1_a2",
+    "1/8589934592"
+   ]
+  ],
+  [
+   [
+    "K",
+    "H_aK_e1*H_aK_p1*H_e2_gc1*H_e3_p1*H_e4_p2*T_a3_a3",
+    "I/17179869184"
+   ],
+   [
+    "C",
+    "H_e1_gb2*H_e2_gc1*H_e3_p1*H_e4_p2*H_p1_p2*T_a3_a3",
+    "-I/17179869184"
+   ],
+   [
+    "H",
+    "H_a1_a2*H_a1_e1*H_a2_e2*H_e3_p1*H_e4_p2*H_p1_p1*T_a3_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_a2*H_a1_e1*H_a2_e2*H_e3_p1*H_e4_p2*H_p1_p2*T_a3_a3",
+    "-1/4294967296"
+   ],
+   [
+    "H",
+    "H_a1_a2*H_a1_e1*H_a2_e2*H_e3_p1*H_e4_p2*H_p2_p2*T_a3_a3",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_a3*H_a1_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p2_p2*T_a2_a2",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a1_p1*H_a2_e2*H_a2_p1*H_e3_p1*H_e4_p2*T_a3_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a1_p1*H_a3_e2*H_a3_p2*H_e3_p1*H_e4_p2*T_a2_a2",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a1_p2*H_a2_e2*H_a2_p1*H_e3_p1*H_e4_p2*T_a3_a3",
+    "1/4294967296"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a1_p2*H_a2_e2*H_a2_p2*H_e3_p1*H_e4_p2*T_a3_a3",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a1_p2*H_a3_e2*H_a3_p1*H_e3_p1*H_e4_p2*T_a2_a2",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a1_e1*H_a1_p2*H_a3_e2*H_a3_p2*H_e3_p1*H_e4_p2*T_a2_a2",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a2_a3*H_a2_e1*H_a3_e2*H_e3_p1*H_e4_p2*H_p1_p1*T_a1_a1",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a2_e1*H_a2_p1*H_a3_e2*H_a3_p1*H_e3_p1*H_e4_p2*T_a1_a1",
+    "1/8589934592"
+   ],
+   [
+    "H",
+    "H_a2_e1*H_a2_p1*H_a3_e2*H_a3_p2*H_e3_p1*H_e4_p2*T_a1_a1",
+    "-1/8589934592"
+   ],
+   [
+    "H",
+    "H_a2_e1*H_a2_p2*H_a3_e2*H_a3_p1*H_e3_p1*H_e4_p2*T_a1_a1",
+    "1/8589934592"
+   ]
+  ]
+ ],
+ "H_odd_formal": 4,
+ "even_classification": {
+  "dim_H": 6,
+  "dim_Nbar_g": 133,
+  "dim_T": 126,
+  "dim_T_cap_blind": 23,
+  "dim_blind_g": 24,
+  "dim_pure_evanescent_combos": 292,
+  "images_inside_Nbar": true,
+  "n_generators": {
+   "F": 251,
+   "G": 54,
+   "KKc": 38
+  },
+  "rank_Sigma": 126,
+  "sigma_inside_Nbar": true
+ },
+ "inconsistency": {
+  "a_minus_b": "-6*(d - 4)",
+  "a_minus_c": "-(d - 4)*(d + 1)*(d**2 - 3*d + 6)",
+  "consistent_only_at_d4": true,
+  "det_4S_full": "24",
+  "det_hat": "d**4 - 6*d**3 + 11*d**2 - 6*d",
+  "one_pair_hat": "6*d"
+ },
+ "odd_X_dim_4d": 187,
+ "odd_X_dim_ev": 164,
+ "odd_X_sectors": {
+  "C": {
+   "4d": 32,
+   "ev": 9
+  },
+  "H": {
+   "4d": 115,
+   "ev": 135
+  },
+  "K": {
+   "4d": 28,
+   "ev": 20
+  },
+  "S": {
+   "4d": 12,
+   "ev": 0
+  }
+ },
+ "odd_Y_families": {
+  "F": {
+   "4d": 18,
+   "ev": 30
+  },
+  "G": {
+   "4d": 7,
+   "ev": 3
+  },
+  "KKc": {
+   "4d": 2,
+   "ev": 2
+  }
+ },
+ "odd_block_ranks": {
+  "bose": 109,
+  "ccK": 4,
+  "ccb": 0,
+  "geq": 9,
+  "hhc": 49
+ },
+ "odd_classification": {
+  "dim_H": 4,
+  "dim_Nbar_g": 23,
+  "dim_T": 19,
+  "dim_T_cap_blind": 4,
+  "dim_blind_g": 4,
+  "dim_pure_evanescent_combos": 42,
+  "images_inside_Nbar": true,
+  "n_generators": {
+   "F": 45,
+   "G": 10,
+   "KKc": 4
+  },
+  "rank_Sigma": 19,
+  "sigma_inside_Nbar": true
+ },
+ "odd_cohomology_dimension": "4 (formal eps scheme, Schouten not imposed)",
+ "odd_dims": {
+  "C": 9,
+  "H": 135,
+  "K": 20,
+  "S": 0
+ },
+ "outcome": "CLOSED (scheme-dependent)",
+ "scheme": "BM-projected epsilon in DRED: multilinear, antisymmetric, hat-projected slots; eps.eps never reduced (never needed: rows linear in X, all other inputs eps-free); Schouten not imposed",
+ "schouten_variant": {
+  "dim_H_schouten_reduced": 2,
+  "dim_W_s_cap_Nbar": 3,
+  "n_relations": 138,
+  "note": "rank_rows_on_W_s > 0 means the rows see Schouten combinations: imposing Schouten is then not compatible with the calculus' rows (hat space is d-dimensional); dim_H_schouten_reduced quotients Nbar by the Schouten directions it contains",
+  "rank_W_s": 23,
+  "rank_rows_on_W_s": 20
+ },
+ "statement": "Hbar_odd = 4 in the BM-projected DRED eps scheme without Schouten; Schouten combinations are seen by the rows (rank 20), so Schouten is not compatible with this calculus; quotienting the 3 Schouten directions inside Nbar would leave 2",
+ "structure": {
+  "eps_eps_products_in_rows": 0,
+  "odd_inhomogeneity": 0,
+  "parity_automorphism": "eps -> -eps maps the calculus to itself (all vertices, propagators, poles, sigma-bar pieces and contraction rules are eps-free), so every row splits into even + odd parts"
+ },
+ "wrapper_even_reproduces_R07": true
+}

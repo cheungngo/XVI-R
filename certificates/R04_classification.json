@@ -1,0 +1,25 @@
+{
+ "H_bar_dim": 20,
+ "note": "Failing G images excluded from the trivial span (their sigma-bar is not a BRST image); H_bar grows from R03's 18 to 20. R03's 18 all survive as nontrivial.",
+ "physical_certified": 0,
+ "reduced": {
+  "dim_H_bar": 20,
+  "dim_Nbar_g": 139,
+  "dim_T_bar": 105,
+  "dim_T_cap_blind": 36,
+  "dim_blind_g": 50,
+  "dim_span_allG_plus_blind_cap_Nbar": 121,
+  "n_Y_all": 228,
+  "n_Y_passing": 215,
+  "rank_Sigma_bar_passing": 105,
+  "sigma_bar_nilpotent_on_passing_Y": true
+ },
+ "status": "CONDITIONAL on the T(c*) G-sector obstruction and on Y-space completeness",
+ "transport_R03_18": {
+  "dim": 18,
+  "inside_Nbar_g": 18,
+  "nontrivial_in_H_bar": 18,
+  "outside_all_computed_images": 18,
+  "trivial_or_blind": 0
+ }
+}

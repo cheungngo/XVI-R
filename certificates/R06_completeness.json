@@ -1,0 +1,90 @@
+{
+ "R05_reproduced": {
+  "dim_H": 18,
+  "dim_Nbar_g": 133,
+  "dim_T": 113,
+  "dim_T_cap_blind": 36,
+  "dim_blind_g": 38,
+  "rank_Sigma": 113,
+  "sigma_inside_Nbar": true
+ },
+ "counts": {
+  "F": {
+   "4d": 57,
+   "all": 261,
+   "ev": 204,
+   "frozen_equals_independent_ev": true,
+   "frozen_ev": 204,
+   "partition_ok": true
+  },
+  "G": {
+   "4d": 21,
+   "all": 54,
+   "ev": 33,
+   "frozen_equals_independent_ev": true,
+   "frozen_ev": 33,
+   "partition_ok": true
+  },
+  "KKc": {
+   "4d": 12,
+   "all": 46,
+   "ev": 34,
+   "frozen_equals_independent_ev": true,
+   "frozen_ev": 34,
+   "partition_ok": true
+  },
+  "X_C": {
+   "4d": 69,
+   "all": 150,
+   "ev": 81,
+   "frozen_equals_independent_ev": true,
+   "frozen_ev": 81,
+   "partition_ok": true
+  },
+  "X_H": {
+   "4d": 219,
+   "all": 807,
+   "ev": 588,
+   "frozen_equals_independent_ev": true,
+   "frozen_ev": 588,
+   "partition_ok": true
+  },
+  "X_K": {
+   "4d": 68,
+   "all": 202,
+   "ev": 134,
+   "frozen_equals_independent_ev": true,
+   "frozen_ev": 134,
+   "partition_ok": true
+  },
+  "X_S": {
+   "4d": 26,
+   "all": 44,
+   "ev": 18,
+   "frozen_equals_independent_ev": true,
+   "frozen_ev": 18,
+   "partition_ok": true
+  }
+ },
+ "dim_4d_combos_pure_evanescent": 37,
+ "enlarged": {
+  "dim_H": 18,
+  "dim_T": 113,
+  "dim_T_plus_blind": 115,
+  "new_trivial_directions": 0
+ },
+ "leak_outside_ev_plus_4d": 0,
+ "n_4d_generators_nonzero": {
+  "F": 57,
+  "G": 21,
+  "KKc": 10
+ },
+ "pure_ev_images_inside_Nbar": true,
+ "rank_ev_part_all_4d_images": 33,
+ "rank_pure_ev_images": 3,
+ "transport_R05_18": {
+  "dim": 18,
+  "stable": true,
+  "trivial_after_enlargement": 0
+ }
+}

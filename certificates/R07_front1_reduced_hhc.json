@@ -1,0 +1,54 @@
+{
+ "R05rule": {
+  "D2_split_sums_to_frozen": true,
+  "D3_split_sums_to_frozen": true,
+  "Dgf_plus_sigmaE_4D": "0",
+  "Dgf_plus_sigmaE_4D_zero": true,
+  "Dgf_plus_sigmaE_n_terms": 186,
+  "Rbar_4D_zero": true,
+  "Rbar_n_terms": 262,
+  "fit": {
+   "dim_N_with_ghost_eq": 133,
+   "n_eq": 1594,
+   "particular_CT_all_evanescent": true,
+   "particular_CT_n_terms": {
+    "C": 15,
+    "H": 388,
+    "K": 36,
+    "S": 0
+   },
+   "rank": 688,
+   "rank_aug": 688,
+   "solvable_with_ghost_eq": true,
+   "solvable_without_ghost_eq": true,
+   "verified_rows_zero": true
+  },
+  "full_minus_reduced_equals_Dgf_plus_sigmaE": true,
+  "tree": {
+   "A_plus_B_EH_zero": true,
+   "B_gf_plus_sigma_E_zero": true,
+   "full_tree_zero": true
+  }
+ },
+ "Rbar_definition": "A + B2 + B3 + C + D2_EH + D3_EH (gauge-fixing part of S_2 and cbar channel E removed)",
+ "hatgen": {
+  "Rbar_4D_zero": true,
+  "Rbar_n_terms": 139,
+  "dim_N_with_ghost_eq": 133,
+  "ghost_rows_4D_zero": true,
+  "particular_CT_all_evanescent": true,
+  "particular_CT_n_terms": {
+   "C": 27,
+   "H": 193,
+   "K": 49,
+   "S": 0
+  },
+  "rank": 688,
+  "rank_aug": 688,
+  "sigma_F": "I",
+  "solvable_with_ghost_eq": true,
+  "solvable_without_ghost_eq": true,
+  "verified_rows_zero": true
+ },
+ "outcome": "CLOSED"
+}

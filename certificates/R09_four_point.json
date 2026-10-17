@@ -1,0 +1,25 @@
+{
+ "available": [
+  "V4 (frozen, cross-checked)",
+  "K c h h = 0, cbar c h h = 0 (derived)",
+  "n-gon one-loop pole engine with three independent momenta (fastpole, G08 reproduced)"
+ ],
+ "engine": {
+  "V1_G08_reproduced": true
+ },
+ "engine_outcome": "BUILT; validated on the three-point ghost triangle only",
+ "infeasibility_evidence": [
+  "ghost box (smallest four-point graph): symbolic fastpole path >= 6-7 GB RSS, killed twice by the kernel OOM killer (15 GB box); slow Expr path 131 min CPU without finishing one pole; numeric-point path >30 min without finishing",
+  "frozen three-point graviton triangle G01 already takes 733 s on the fast path; graviton boxes add one V3 vertex, one graviton line and a third independent momentum",
+  "c.h.h.h bubbles need V5 and h h h phi phi vertices, which are absent from the frozen engine",
+  "kappa^4 evanescent ansatz: hhhh 27243 ev + 4992 4D, K c h h 4329 ev + 981 4D (vs 821 unknowns at three points); the sigma-bar map and row assembly of the frozen code are hard-wired to three-point kinematics",
+  "a dense mod-p matrix of that width does not fit in 15 GB, and the rows that would fill it do not exist yet"
+ ],
+ "missing": [
+  "graviton-, scalar- and ghost-loop four-point poles",
+  "V5 and h h h phi phi vertices",
+  "poles of Gamma_{K c h h}, Gamma_{c* c c h}, Gamma_{K K c c}",
+  "four-point row assembly, kappa^4 evanescent ansatz and its sigma-bar map"
+ ],
+ "rows_outcome": "OPEN (infeasible on this machine; evidence recorded; nothing assumed zero)"
+}

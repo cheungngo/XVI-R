@@ -1,0 +1,20 @@
+{
+ "O1_closure_unchanged": "CLOSED (scoped)",
+ "P6_outcome": "Partial",
+ "bulk_symmetry_restored": false,
+ "claim_status": "partial",
+ "disclosed": [
+  "R06-D1: frozen Q06/Q07 ghost-row loop remainders recomputed with the hat-aware c*-line rule differ from the frozen ones by purely evanescent terms (ccK 20, ccb 22 terms); the drop-T rule is NOT exact for loops. Frozen certificates not edited; superseded numerically by R06_loop_remainders.",
+  "R06-D2: Y-space enlarged by 88 purely-4D generators (F57,G21,KKc10); no new trivial directions",
+  "R06-D3: R06 code in r06/ (R01-R05 gates untouched)"
+ ],
+ "goals": {
+  "A_loop_remainders": "ESTABLISHED: CHANGED (evanescent only); propagated; fit solvable; H unaffected",
+  "B_Y_completeness": "ESTABLISHED",
+  "p22_kappa2_consistency": "OPEN",
+  "reduced_formulation_loop_residual": "OPEN (hhc loop residual not recomputed in the Gamma-bar formulation; stored full-formulation residual is incompatible with the reduced channels both before and after the hat rule)"
+ },
+ "insertion": "frozen",
+ "landmark": "XVI-R",
+ "release": "R06"
+}

@@ -1,0 +1,18 @@
+{
+ "landmark": "XVI-R",
+ "release": "R07",
+ "decision": "ACCEPT",
+ "checks": {
+  "R06_layer_accept": true,
+  "expected_pinned": true,
+  "certs_match_pinned": true,
+  "files_rehashed": true,
+  "no_unpinned_file": true,
+  "Kline_finding_recorded": true,
+  "classification_consistent": true,
+  "front1_consistent": true,
+  "p22_consistent": true,
+  "status_honest": true,
+  "hard_stops": true
+ }
+}

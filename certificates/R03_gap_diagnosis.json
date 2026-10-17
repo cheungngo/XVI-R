@@ -1,0 +1,36 @@
+{
+ "D_split_exact": true,
+ "channel_coefficient_scan": {
+  "channel_coefficients_rows": {
+   "nullspace": [],
+   "rank": 5
+  },
+  "channel_coefficients_rows_and_ghost_eq": {
+   "nullspace": [],
+   "rank": 5
+  }
+ },
+ "leg_identities_hhc_block": {
+  "I1_EH_leg1": 0,
+  "I2_EH_only_legs23_vs_A_K": 21,
+  "I2_legs23_vs_A_K": 0,
+  "I3_E_legs23_vs_A_C": 0,
+  "I3_gf1_E_AC": 40,
+  "I3_gf1_plus_E1": 40,
+  "rank_each": {
+   "A_C": 44,
+   "A_K": 25,
+   "D_EH1": 0,
+   "D_EH2": 18,
+   "D_EH3": 18,
+   "D_gf1": 31,
+   "D_gf2": 21,
+   "D_gf3": 21,
+   "E1": 56,
+   "E2": 44,
+   "E3": 44
+  },
+  "total": 40
+ },
+ "reading": "defect (rank 40) = A-channel on (D_gf + E) at the ghost leg: the antighost / gauge-fixing sector; EH gauge invariance (I1) and leg commutation (I2, E vs A_C) hold. No sign/normalisation fixes it."
+}

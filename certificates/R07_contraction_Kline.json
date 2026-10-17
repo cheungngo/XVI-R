@@ -1,0 +1,18 @@
+{
+ "finding": "gravity.contract also mistreats the external K~<->E graviton-probe line (rows.contract_id 'K','E'): it drops T copies and keeps H as the full 4S dot, exact only when both sides carry 4S dots. K-side ghat/gt contractions (evanescent X_K monomials T(aK,.), D13 E2 structure) are lost or mis-hatted.",
+ "ghost_blocks_equal_R05": {
+  "ccK": true,
+  "ccb": true
+ },
+ "loop_chan_C_change_4D": "0",
+ "loop_chan_C_changed": true,
+ "loop_chan_D_EH_change_4D": "0",
+ "loop_chan_D_EH_changed": true,
+ "reduced_hhc_block": {
+  "rank_joint": 320,
+  "rank_new": 279,
+  "rank_old": 275,
+  "rowspace_changed": true
+ },
+ "rule": "eta = eta_bar + eta_hat on every external probe line: H.H->H, T.T->T, mixed->0 (R05 rule, extended)"
+}

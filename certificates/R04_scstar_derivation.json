@@ -1,0 +1,38 @@
+{
+ "candidates_failing": {
+  "K_only": 33,
+  "Q08_handmade": 33,
+  "Q11_rhoT_S_eps+1": 19,
+  "Q11_rhoT_S_eps-1": 13,
+  "kinetic_half_S_minus1": 33,
+  "kinetic_half_S_plus1": 33,
+  "kinetic_minus1_S_minus1": 33,
+  "kinetic_minus1_S_plus1": 33,
+  "kinetic_minus1_no_S": 33,
+  "kinetic_plus1_no_S": 33,
+  "only_S_minus1": 6
+ },
+ "derivation": {
+  "X_C": "rho*T(X_K) (Ktilde expansion; not independent kinetic)",
+  "X_K": "(D^T Ktilde).G",
+  "X_S": "-s0h.dY/dh with eps_S=-1 (antibracket relative sign)",
+  "eps_S": -1,
+  "kinetic_alternative": "cbar.Box.G fails all 33; nullspace(X_K,kinetic,X_S) empty"
+ },
+ "kinetic_scan_nullspace": [],
+ "reading": "Derived sigma-bar on Y=c*.G from S-bar(Ktilde): X_K=(D^T Ktilde).G, X_C=rho*T(X_K), X_S=-s0h.dY/dh (eps_S=-1). Raw kinetic cbar.Box.G is excluded (fails all 33). s0 hat{h}=0 truncations of X_S make the count worse.",
+ "s0hat_tests": {
+  "H_only": {
+   "failing": 19,
+   "n_images": 33
+  },
+  "full": {
+   "failing": 13,
+   "n_images": 33
+  },
+  "zero_if_any_T_a3": {
+   "failing": 19,
+   "n_images": 33
+  }
+ }
+}

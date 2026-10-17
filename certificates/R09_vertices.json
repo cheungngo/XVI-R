@@ -1,0 +1,76 @@
+{
+ "Kch_cbch_match_frozen": true,
+ "Kchh_zero": true,
+ "V2_V3_V4_match_frozen": true,
+ "V4_frozen_location": "XVI-Q p6q06/v4.py (Q06; gauge identity delta0 S4 + delta1 S3 = 0 validated there)",
+ "cbchh_zero": true,
+ "checks": {
+  "V2": [
+   {
+    "match": true,
+    "nonzero": true,
+    "seed": 1
+   },
+   {
+    "match": true,
+    "nonzero": true,
+    "seed": 2
+   },
+   {
+    "match": true,
+    "nonzero": true,
+    "seed": 3
+   }
+  ],
+  "V3": [
+   {
+    "match": true,
+    "nonzero": true,
+    "seed": 4
+   },
+   {
+    "match": true,
+    "nonzero": true,
+    "seed": 5
+   },
+   {
+    "match": true,
+    "nonzero": true,
+    "seed": 6
+   }
+  ],
+  "V4": [
+   {
+    "match": true,
+    "nonzero": true,
+    "seed": 7
+   },
+   {
+    "match": true,
+    "nonzero": true,
+    "seed": 8
+   }
+  ]
+ },
+ "ghost": [
+  {
+   "Kch_match": true,
+   "Kch_nonzero": true,
+   "Kchh_value": "0",
+   "cbch_match": true,
+   "cbch_nonzero": true,
+   "cbchh_value": "0"
+  },
+  {
+   "Kch_match": true,
+   "Kch_nonzero": true,
+   "Kchh_value": "0",
+   "cbch_match": true,
+   "cbch_nonzero": true,
+   "cbchh_value": "0"
+  }
+ ],
+ "outcome": "CLOSED",
+ "route": "explicit 4-component tensors + nilpotent multilinear ring (no frozen tensor code)",
+ "statement": "V4 (kappa^2) agrees with frozen XVI-Q v4.V4_grav (4D components, independent route); K c h h = cbar c h h = 0 identically (s g = L_c g linear in g, linear gauge function)"
+}

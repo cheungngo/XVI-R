@@ -1,0 +1,16 @@
+{
+ "dim_N_g": 104,
+ "dim_W": 61,
+ "reading": "q(S) = number of unclassified N_g directions that cannot be represented with vanishing S-coordinates (modulo sigma-span + blind). Not a classification: no direction is certified trivial or physical.",
+ "unclassified": 43,
+ "visibility_q": {
+  "CS": 13,
+  "all_coords": 43,
+  "hat_deg_1": 27,
+  "hat_deg_ge2": 27,
+  "sector_C": 13,
+  "sector_H": 28,
+  "sector_K": 25,
+  "sector_S": 0
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "O1_closure_unchanged": "CLOSED (scoped)",
+ "P6_outcome": "Partial",
+ "bulk_symmetry_restored": false,
+ "claim_status": "partial",
+ "disclosed": [
+  "R07-D1: hat-aware contraction extended to the external K~<->E graviton-probe line (and ghost line X<->Z); reduced hhc linear block and sigma-bar images (F, KKc) rebuilt; Hbar 18 -> 6 (T 126, blind 24); R05/R06 H=18 superseded; frozen code not edited",
+  "R07-D2: loop channels C and D_EH of the hhc row change under the extended rule (evanescent only; 4D closure unaffected)",
+  "R07-D3: reduced hhc loop residual Rbar defined as A+B+C+D_EH; full - reduced = D_gf + sigma_F E (loop, purely evanescent)",
+  "R07-D4: R07 code in r07/ (R01-R06 gates untouched)"
+ ],
+ "goals": {
+  "1_reduced_hhc_loop_residual": "CLOSED",
+  "2_p22_kappa2_consistency": "CLOSED",
+  "four_point_rows": "OPEN",
+  "gram_reduced_scheme_count": "OPEN",
+  "parity_odd_cohomology": "OPEN"
+ },
+ "insertion": "frozen",
+ "landmark": "XVI-R",
+ "release": "R07"
+}

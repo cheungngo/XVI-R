@@ -1,0 +1,20 @@
+{
+ "O1_closure_unchanged": "CLOSED (scoped)",
+ "P6_outcome": "Partial",
+ "bulk_symmetry_restored": false,
+ "claim_status": "partial",
+ "frozen_layer_revisions": [],
+ "goals": {
+  "1_sigma_gap": "Partial: characterised by defect localisation; NOT CLOSED",
+  "2_unclassified_43": "Partial: invariant sector/evanescent visibility computed; classification OPEN",
+  "3_invariant_basis": "OPEN (not attempted beyond goal 2 visibility)",
+  "4_p22_kappa2_consistency": "OPEN (not attempted)"
+ },
+ "insertion": "frozen",
+ "landmark": "XVI-R",
+ "not_implied": "no direction certified physical or trivial; Missing never zero",
+ "premises_imported": [
+  "XVI-Q Q11 (pinned zip)"
+ ],
+ "release": "R01"
+}

@@ -1,0 +1,21 @@
+{
+ "O1_closure_unchanged": "CLOSED (scoped)",
+ "P6_outcome": "Partial",
+ "bulk_symmetry_restored": false,
+ "claim_status": "partial",
+ "disclosed": [
+  "R04-D1: failing G images excluded from im(sigma-bar); H_bar 18->20 vs R03",
+  "R04-D2: R04 code in r04/ (R01-R03 gates untouched)"
+ ],
+ "goals": {
+  "1_scstar_derived": "ESTABLISHED: X_K, X_C=rho*T, X_S with eps_S=-1 from the reduced master",
+  "2_G_defect": "Partial: 20/33 closed; 13/33 OPEN (T(c*) obstruction on ghost rows)",
+  "3_classification": "Partial: H_bar=20 conditional classes (R03's 18 survive + 2); 0 physical",
+  "4_Y_completeness": "OPEN (power-counting monomials only)",
+  "5_p22_kappa2_consistency": "OPEN"
+ },
+ "insertion": "frozen",
+ "landmark": "XVI-R",
+ "not_implied": "no direction certified physical; Missing never zero",
+ "release": "R04"
+}

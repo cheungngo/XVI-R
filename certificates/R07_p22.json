@@ -1,0 +1,89 @@
+{
+ "ambiguity": "the completion is fixed modulo Nbar_g; its class in Hbar (dim 6) is not determined by p22",
+ "completion": {
+  "Xi_4D_zero": true,
+  "Xi_terms": {
+   "ccK": 10,
+   "ccb": 14,
+   "hhc": 130
+  },
+  "completion_all_evanescent": true,
+  "completion_n_terms": {
+   "C": 28,
+   "H": 177,
+   "K": 52,
+   "S": 0
+  },
+  "dim_N_with_ghost_eq": 133,
+  "rank": 688,
+  "rank_aug": 688,
+  "solvable_with_ghost_eq": true,
+  "solvable_without_ghost_eq": true,
+  "verified_rows_zero": true
+ },
+ "identification": {
+  "D01": {
+   "own_ev_n_terms": 8,
+   "own_ev_over_P_ev": {
+    "constant": true,
+    "ratio": "I"
+   },
+   "own_over_P_full": {
+    "constant": true,
+    "ratio": "I"
+   },
+   "p22_CT_equals_minus_pole": true,
+   "same_ratio": true
+  },
+  "D03": {
+   "own_ev_n_terms": 8,
+   "own_ev_over_P_ev": {
+    "constant": true,
+    "ratio": "I"
+   },
+   "own_over_P_full": {
+    "constant": true,
+    "ratio": "I"
+   },
+   "p22_CT_equals_minus_pole": true,
+   "same_ratio": true
+  },
+  "D06": {
+   "own_ev_over_P_SE": {
+    "constant": true,
+    "ratio": "I"
+   },
+   "own_over_P_full": {
+    "constant": true,
+    "ratio": "I"
+   },
+   "p22_CT_equals_minus_pole": true
+  },
+  "D11": {
+   "own_ev_n_terms": 8,
+   "own_ev_over_P_ev": {
+    "constant": true,
+    "ratio": "I"
+   },
+   "own_over_P_full": {
+    "constant": true,
+    "ratio": "I"
+   },
+   "p22_CT_equals_minus_pole": true,
+   "same_ratio": true
+  },
+  "D13": {
+   "own_ev_over_P_E2": {
+    "constant": true,
+    "ratio": "-I"
+   },
+   "own_over_P_full": {
+    "constant": true,
+    "ratio": "-I"
+   },
+   "p22_CT_equals_minus_pole": true
+  }
+ },
+ "not_implied": "four-point rows, finite parts, two loops",
+ "outcome": "CLOSED (three-point, one-loop pole level, reduced hat-aware system)"
+}

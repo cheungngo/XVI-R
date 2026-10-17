@@ -1,0 +1,130 @@
+# XVI-R checkpoint (append-only)
+- 2026-10-13T04:30:26Z XVI-R created. Box rebooted ~04:24 (XVI-Q dist/ and build/ absent). XVI-Q Q11 source-only zip regenerated deterministically from the read-only XVI-Q tree: sha 1888f327... == Q11 manifest entry; the Q11 manifest (sha ea1bf6af...) lists full zip e2e5980e... (not on disk after reboot). Imported by those shas.
+- 2026-10-13T04:30:30Z stage0 (XVI-Q Q11 build from pinned zip into build/xviq) launched setsid; TeX reinstall running
+- 2026-10-13T04:32:47Z R01 code written (r01_sci, r01_certs, release_r01, tests, build_r, release_tools_r, make_expected_r01, R01.tex). stage0 running (box rebooted again? stage pid 7721).
+- 2026-10-13T05:19:56Z resume: no reboot (uptime 35 min); stage0 PID 7721 still alive (XVI-Q build at q05_certs); TeX present. Continuing to shepherd.
+- 2026-10-13T06:10:10Z resume #2: stage0 7721 alive, not restarted; post-stage chain launched setsid (/tmp/r01_chain.sh, waits for 7721)
+- 2026-10-13T06:39:39Z chain: stage0 done STAGE_XVIQ_OK
+- 2026-10-13T07:10:35Z chain: r01_sci FAIL
+- 2026-10-13T07:10:43Z R01-F1 (disclosed fix): r01_sci was too slow (per-failure sympy rank of augmented matrices, >25 min, still in loop); killed PID 33790 (chain exited CHAIN_FAIL). Rewritten to left-kernel membership; ghost-eq test now asks existence of a joint delta ([A;Ag] restricted). Chain relaunched setsid (stage0 not rerun).
+- 2026-10-13T07:10:43Z chain: stage0 done STAGE_XVIQ_OK
+- 2026-10-13T07:22:30Z R01-F1 cont.: sympy Matrix.nullspace on A (1521x821) also too slow; switched all kernels to exact DomainMatrix over QQ<I> (left kernel per coordinate set computed once, ~80 s each). Killed chain+r01_sci, relaunched chain setsid.
+- 2026-10-13T07:22:30Z chain: stage0 done STAGE_XVIQ_OK
+- 2026-10-13T07:28:33Z chain: r01_sci done
+- 2026-10-13T07:28:33Z chain: certs+tests+tex done
+- 2026-10-13T07:28:34Z chain: gate REJECT
+- 2026-10-13T07:36:00Z gate REJECT (xviq_layer): the source-only zip carries no certificates, so n_reference was 0. Fix R01-F2: the layer is now compared to the certificate values pinned in the zip's q11_expected.json. R01-F3: every ansatz coordinate is evanescent, so the 'evanescent/4d' split was vacuous (821/0); replaced by hat degree 1 / >=2 / all. Results of the first run are discarded. Chain relaunched.
+- 2026-10-13T07:36:00Z chain: stage0 done STAGE_XVIQ_OK
+- 2026-10-13T07:43:20Z chain: r01_sci done
+- 2026-10-13T07:43:21Z chain: certs+tests+tex done
+- 2026-10-13T07:43:21Z chain: freeze + gate ACCEPT
+- 2026-10-13T07:43:21Z chain: source zip written; author rebuild started
+- 2026-10-13T09:39:21Z chain: author rebuild: { "zip_sha256": "1629596107db0e8bb05f0916b60d33bb1757806b3f84092bfa68dea32545d64a", "build_ok": true, "matched": 5, "total": 5, "mismatched": [], "verdict": "PASS"}
+- 2026-10-13T09:39:22Z chain: manifest written last (no sync)
+- 2026-10-13T10:00:09Z R01 archived to archive/R01 (zips, manifest, status, pdf, certs, rebuild report). R02 started: classification of the 43 via the full computed sigma map (F Ktilde, G, P cbar) and the cohomology quotient.
+- 2026-10-13T10:08:26Z R02 code written (r02_sci, r02_certs, release_r02, make_expected_r02, build_r02, release_tools_r02, tests_r02, R02.tex 11 pp dev). Dev run: 43 = 21 trivial + 0 blind + 22 candidates (22 robust). R02-R1 applied to release_r01.py. Chain launched setsid.
+- 2026-10-13T10:08:26Z r02 chain: R01 gate re-run ACCEPT
+- 2026-10-13T10:10:20Z r02 chain: r02_sci done
+- 2026-10-13T10:10:20Z r02 chain: certs+tests+tex done
+- 2026-10-13T10:10:21Z r02 chain: freeze + R02 gate ACCEPT
+- 2026-10-13T10:10:21Z r02 chain: source zip written; author rebuild started (full, incl. stage0)
+- 2026-10-13T12:08:00Z r02 chain: author rebuild: { "zip_sha256": "c08832f8b62066b62a23eb665f5e66eba314c7c832b3aa103066bcbac248fa39", "build_ok": true, "matched": 10, "total": 10, "mismatched": [], "verdict": "PASS"}
+- 2026-10-13T12:08:01Z r02 chain: manifest written last (no sync)
+- 2026-10-13T15:17:35Z R02 archived (archive/R02). R03 started: diagnose/close the hhc sigma-composition gap.
+- 2026-10-13T15:26:00Z R03 diag: r03_diag.py done (D_split_exact true; channel_coefficients nullspace empty for rows and rows+ghost_eq, rank 5/5; rank_defect_derived 40). r03_legs.py done: I1_EH_leg1=28, I2_legs23_vs_A_K=37, I2_EH_only=35, I3_gf1_E_AC=71, I3_E_legs23_vs_A_C=56, I3_gf1_plus_E1=40, total=40. Reading: no global channel coefficient (sign/normalisation) closes the hhc sigma gap; expected leg nilpotency sub-identities all fail. Gap NOT CLOSED. Awaiting next R03 attack or diagnosis-only ship.
+- 2026-10-13T15:36:02Z R03 diag: (a) D = D_EH + D_gf exactly; no global coefficient on (D_EH,D_gf,A_K,E,A_C) closes the defect (nullspace empty, rows and rows+ghost-eq). (b) leg-resolved on the hhc ROW BLOCK ONLY: I1 A.D_EH^(1)=0 holds; I2 legs 2,3 vs A_K holds (0); E legs 2,3 vs A_C holds (0); the whole defect (rank 40) is A-channel on D_gf^(1)+E^(1): gauge-fixing/antighost sector at the c leg. CORRECTION to the parent's relayed 'per-leg ranks 28/37/71 FAIL': those came from my first run using full A incl. Bose rows (leg pieces are not Bose-symmetric individually) and are artefacts. Next: derive reduced-functional (Gamma-bar, Ktilde) sigma and row.
+- 2026-10-13T16:11:19Z R03 reduced formulation (Gamma-bar: hhc row = A + D_EH; sigma-bar F: X_H = D_EH, X_K = A_K, X_C = rho T(X_K)): ALL 185 nonzero F images satisfy the reduced system + ghost eq (gap CLOSED for F in reduced variables). G: 13/33 fail (defect rank 6). Full vs reduced hhc rows differ on ker Ag (rank 47); dim N_g 104 vs Nbar_g 139. Next: block-resolve G failures, test a scalar for the gf/E combination, add missing gh-1 family Ktilde.Ktilde.c.
+- 2026-10-13T16:22:52Z R03 fix2: G failures are all in ccK+ccb (not hhc); gf/E scalar: lam=sigma_F=i is the only candidate and does NOT make full==reduced on ker Ag (ranks gf 30, E 63); KKc family: 24 gens, 10 nonzero images, all pass reduced system; reduced: Nbar_g 139, blind_g 50, T-bar 107, trivial+blind 121, 18 candidates (sigma-bar not yet inside Nbar because of G). Next: G c*cc sign eps_S (left open in Q11) fixed by nilpotency test; final classification + transport of R02's 22.
+- 2026-10-13T16:33:58Z R03 final: G eps_S=-1 (13 fail) vs +1 (19 fail): neither closes; global (X_K,X_C,X_S) coefficient scan on G: nullspace empty -> residual G-sector defect in ccK/ccb rows (not hhc). Reduced: Nbar_g 139 = T-bar+blind (121) + 18 classes; R02's 22 transport: 3 not reduced cocycles, 1 trivial/blind, 18 nontrivial in H-bar (outside span of ALL computed images + blind). R03 code moved to r03/ (outside the R01/R02 gate globs, so no frozen-layer gate edit needed).
+- 2026-10-13T16:34:48Z R03 release scaffolding written (r03/: gate, tests, build_r03, release_tools_r03, make_expected_r03, R03.tex 10 pp dev). Chain launched setsid.
+- 2026-10-13T16:56:18Z r03 chain: R03 science + certs done
+- 2026-10-13T16:56:19Z r03 chain: tests + tex done (Pages:           10)
+- 2026-10-13T16:56:19Z r03 chain: freeze + R03 gate ACCEPT
+- 2026-10-13T16:56:19Z r03 chain: source zip written; author rebuild started
+- 2026-10-13T18:49:17Z r03 chain: author rebuild: { "zip_sha256": "f4c1ddccd5244b9588f5dcba992ea455e31b4ca0c7bd03dfe656a34086a666ba", "build_ok": true, "matched": 16, "total": 16, "mismatched": [], "verdict": "PASS"}
+- 2026-10-13T18:49:17Z r03 chain: manifest written last (no sync)
+- 2026-10-13T19:03:42Z R03 archived (archive/R03)
+- 2026-10-14T15:19:08Z R04 started. Plan: derive sigma on Y=c*.G from the reduced master: (1) X_K = (D^T K).G from K in Ktilde.s0h; (2) X_C = (ghost kinetic).G from cbar in Ktilde=K+cbar F'; (3) X_S = -s0h.dY/dh. Q11 used rho*T for X_C (ghost-eq imposition) and R03's (X_K,X_C=rhoT,X_S) scan was empty; the derived X_C is the kinetic piece, not rho*T.
+- 2026-10-14T15:26:48Z R04 science done: derived sc* (X_K, rhoT, X_S eps=-1); kinetic ruled out; G 20/33 pass, 13/33 T(c*) obstruction OPEN; H_bar=20 (R03's 18 + 2); 0 physical. R04.tex compiled.
+- 2026-10-14T15:26:58Z R04.tex OK (Pages:           10)
+- 2026-10-14T15:27:04Z R04 chain launched setsid (gate, rebuild, manifest-last, no sync).
+- 2026-10-14T15:27:47Z r04 chain: R04 science + certs done
+- 2026-10-14T15:27:48Z r04 chain: tests + tex done (Pages:           10)
+- 2026-10-14T15:27:48Z r04 chain: freeze + R04 gate ACCEPT
+- 2026-10-14T15:27:49Z r04 chain: source zip written; author rebuild started
+- 2026-10-14T17:54:41Z r04 chain: author rebuild: { "zip_sha256": "48aa03e3d24602cbdc8d4c174de786a966ba3ab46d9d5c2f3e1f501345e8424e", "build_ok": true, "matched": 22, "total": 22, "mismatched": [], "verdict": "PASS"}
+- 2026-10-14T17:54:41Z r04 chain: manifest written last (no sync)
+- 2026-10-14T18:24:58Z R04 archived to archive/R04 (zips, manifest, status, pdf, certs, rebuild report). Next R05 not started (awaiting direction on T(c*) obstruction vs review hold).
+- 2026-10-15T02:17:25Z R05 started. Diagnosis lead: gravity.contract drops ALL T-copies of probe dots ('4S dots appear as H+T: keep H copy'). In the ghost-row c1 channel (Gamma_{c*cc} x kinetic, contracted over the c* line X<->ZZ) the X_S ansatz terms with a single hatted c* index (T_*_z, no H partner) are therefore annihilated; correct eta=bar+hat contraction gives T_X_aK.T_u_ZZ -> T_u_aK. Testing hat-aware contraction on the linear (X-dependent) part only.
+- 2026-10-15T02:32:22Z R05 RESULT: artefact confirmed. Rebuilt non-hat blocks == frozen Q11 ccK/ccb (sanity). Hat-aware c*-line contraction: F 0/185, KKc 0/10, G 0/33 failing; eps_S=-1 unique (+1: 19 fail); rank Sigma = dim T = 113 (sigma-bar inside Nbar on the whole Y-space). Nbar_g 133, blind 38, H=18. R04's 20: 2 trivial (were R04-D1 exclusions), 18 nontrivial.
+- 2026-10-15T02:32:49Z R05 scaffolding (r05/: gate, tests, build_r05, tools, R05.tex 10 pp). Chain launched setsid.
+- 2026-10-15T02:35:34Z r05 chain: R05 science + certs done
+- 2026-10-15T02:35:35Z r05 chain: tests + tex done (Pages:           10)
+- 2026-10-15T02:35:35Z r05 chain: freeze + R05 gate ACCEPT
+- 2026-10-15T02:35:35Z r05 chain: source zip written; author rebuild started
+- 2026-10-15T05:29:59Z r05 chain: author rebuild: { "zip_sha256": "324c79adcc376557090defc7a67bfc2c818eaf32021657e3bffa55167feebeef", "build_ok": true, "matched": 27, "total": 27, "mismatched": [], "verdict": "PASS"}
+- 2026-10-15T05:30:00Z r05 chain: manifest written last (no sync)
+- 2026-10-15T06:13:07Z R05 archived (archive/R05). R06 started: (A) loop remainders under hat-aware rule; (B) Y-completeness.
+
+## R06 progress (2026-10-13)
+- (A) r06_loops: loop_remainders_unchanged = FALSE. ccK: 22->10 terms (diff 20 terms), ccb: 24->14 (diff 22 terms); every diff term carries one T (evanescent only). Propagation to the X fit and classification is NOT yet done.
+- (B) r06_complete: the independent enumerator matches frozen ev bases (all/4d/ev partition ok). 4D generators: F57, G21, KKc10; leak 0; 37 pure-evanescent 4D combos -> rank 3 images, all inside Nbar and already in T+blind; new trivial 0; H=18; R05's 18 transported, stable. Conditional on (A).
+- No release built for R06 yet.
+- 2026-10-15T06:36:52Z R06 refit: hat-aware full rows; Q-system (full hhc) solvable incl ghost eq, particular CT evanescent, rows verified 0; 4D projection of loop remainders unchanged; reduced-system inhomogeneous fit with stored (full-formulation) residual unsolvable both old and hat (residual not recomputed in Gamma-bar) -> open; homog Nbar_g=133 unchanged -> H=18 survives
+- 2026-10-15T06:44:16Z r06 chain: R06 science + certs done
+- 2026-10-15T06:44:17Z r06 chain: tests + tex done (Pages:           4)
+- 2026-10-15T06:44:17Z r06 chain: FAIL: R06 gate REJECT
+- 2026-10-15T07:00:28Z r06 chain: resume after make_expected fix (science/tests/tex already done this chain)
+- 2026-10-15T07:00:28Z r06 chain: freeze + R06 gate ACCEPT
+- 2026-10-15T07:00:29Z r06 chain: source zip written; author rebuild started
+- 2026-10-15T09:17:32Z r06 chain: author rebuild: { "zip_sha256": "97c5e2c9a2b2be3efec47d49f284c03689b919c009401715e2e6e51c3789cd8d", "build_ok": true, "matched": 32, "total": 32, "mismatched": [], "verdict": "PASS"}
+- 2026-10-15T09:17:32Z r06 chain: manifest written last (no sync)
+- 2026-10-15T11:21:46Z R06 released (src 97c5e2c9…, full cebc718e…, 32/32, 4pp); archived to archive/R06; R07 started
+- 2026-10-15T11:46:41Z R07 front1 (R05-rule contraction): Rbar=A+B+C+D_EH, tree split exact, full-reduced = D_gf+sigmaE (purely ev, 186 terms), reduced fit SOLVABLE w/ ghost eq (Nbar 133). FINDING: frozen contract also mistreats the external K~<->E graviton-probe line: reduced hhc linear block rank 275->279 (rowspace changed), loop chans C, D_EH change (ev only). r07_reclass launched (full rerun under hat rule on all external probe lines).
+- 2026-10-15T12:03:45Z R07 science complete (r07_reclass + r07_p22). No release package yet.
+  reclass: R05rule sanity H=18 (ghost blocks == R05); hatgen (hat on all external probe lines) H=6, Sigma 126, blind 24, 10 of R05's 18 become trivial, sigma_inside_Nbar true, images_inside_Nbar true. front1 reduced fit solvable w/ ghost eq (Nbar 133), particular CT all-evanescent, rows verified 0.
+  p22: identification D01/D03/D11 ratio I, D13 -I, D06 I; all p22_CT_equals_minus_pole true. Cubic completion: Xi 4D-zero (hhc 130, ccK 10, ccb 14), solvable w/ ghost eq (Nbar 133), completion all-evanescent (K52 C28 S0 H177), verified_rows_zero true.
+  Next: R07 release scaffolding (gate/tests/tex/rebuild) or review hold on H=6 vs packaging.
+- 2026-10-15T12:07:05Z R07 results: hatgen (hat rule on all external probe lines incl K~<->E): Nbar_g 133, T 126, blind 24, T∩blind 23, H=6 (R06's 18 superseded; R05 18 not in new Nbar_g, 10 trivial). Front1 under hatgen SOLVABLE w/ ghost eq, CT evanescent, rows verified. p22: identification exact (own/P ratio = Q05 validation ratio for D01,D03,D11,D13,D06; p22 CT = -pole); cubic completion SOLVABLE (evanescent, rows verified).
+- 2026-10-15T13:02:27Z r07 chain: R07 science + certs done
+- 2026-10-15T13:02:28Z r07 chain: tests + tex done (Pages:           3)
+- 2026-10-15T13:02:28Z r07 chain: freeze + R07 gate ACCEPT
+- 2026-10-15T13:02:29Z r07 chain: source zip written; author rebuild started
+- 2026-10-15T16:43:26Z r07 chain: author rebuild: { "zip_sha256": "4a5584a979974f6711c9f10f82e33ed05434408cc1e716061aba87dab1b4a4c2", "build_ok": true, "matched": 39, "total": 39, "mismatched": [], "verdict": "PASS"}
+- 2026-10-15T16:43:27Z r07 chain: manifest written last (no sync)
+- 2026-10-15T16:50:05Z R07 released (src 4a5584a9…, full 16a9c236…, 39/39, 3pp); archived to archive/R07
+- 2026-10-16T03:15:32Z R08 started (fronts: four_point_rows, gram_reduced_scheme_count, parity_odd_cohomology); R07 frozen import (archive/R07, full 16a9c236…)
+- 2026-10-16T03:35:23Z R08 science done: front2 Gram CLOSED (one Gram poly G in X_H, Bose-sym, sigma image 0, blind not trivial; Nbar 134, blind 25, H_gram=6=H_formal); front3 parity PARTIAL (inputs parity-even, odd sector decouples, odd inhomogeneity 0; odd H dim Missing: no DRED epsilon calculus); front1 four-point OPEN (no V4, Kchh, cbchh vertices, no 4pt loop engine).
+- 2026-10-16T03:40:43Z r08 chain: R08 science + certs done
+- 2026-10-16T03:40:44Z r08 chain: tests + tex done (Pages:           2)
+- 2026-10-16T03:40:44Z r08 chain: freeze + R08 gate ACCEPT
+- 2026-10-16T03:40:44Z r08 chain: source zip written; author rebuild started
+- 2026-10-16T04:55:46Z r08: box restart wiped build/, dist/, /tmp; source zip regenerated (76588c63…; differs from e297b2e3… only via R_CHECKPOINT.md appends); gate re-run ACCEPT; resume rebuild launched
+- 2026-10-16T06:21:55Z r08 chain (resume): author rebuild: { "zip_sha256": "76588c63d42099c4cfef6b5d6a72e87b4646bcd83d01fc877686177fdf1c68ba", "build_ok": false, "matched": 0, "total": 44, "mismatched": [  "R01_P6_status.json",  "R01_gap_localisation.json",  "R01_release.json",  "R01_unclassified_visibility.json",  "R01_xviq_layer.json",  "R02_P6_status.json",  "R02_candidate_basis.json",  "R02_classification.json",  "R02_release.json",  "R02_sigma_map.json",  "R03_H_bar_basis.json",  "R03_P6_status.json",  "R03_classification.json",  "R03_gap_diagnosis.json",  "R03_reduced.json",  "R03_release.json",  "R04_G_outcome.json",  "R04_H_bar_basis.json",  "R04_P6_status.json",  "R04_classification.json",  "R04_release.json",  "R04_scstar_derivation.json",  "R05_H_basis.json",  "R05_P6_status.json",  "R05_classification.json",  "R05_obstruction_outcome.json",  "R05_release.json",  "R06_P6_status.json",  "R06_classification.json",  "R06_completeness.json",  "R06_loop_remainders.json",  "R06_release.json",  "R07_H_basis.json",  "R07_P6_status.json",  "R07_classification.json",  "R07_contraction_Kline.json",  "R07_front1_reduced_hhc.json",  "R07_p22.json",  "R07_release.json",  "R08_P6_status.json",  "R08_four_point.json",  "R08_gram.json",  "R08_parity.json",  "R08_release.json" ], "verdict": "FAIL"}
+- 2026-10-16T06:21:55Z r08 chain (resume): FAIL author rebuild
+- 2026-10-16T07:28:31Z R08 rebuild diag: ROOT CAUSE = pdflatex missing after box restart (Q11 stage: all certs/gates ACCEPT, 162 tests pass, then FileNotFoundError 'pdflatex' in manuscript step). Env fix: reinstall texlive (no code change).
+- 2026-10-16T07:32:52Z texlive reinstalled (texlive-latex-base/recommended/extra, fonts-recommended); pdflatex test OK; relaunching author rebuild from existing source zip 76588c63…
+- 2026-10-16T08:46:37Z r08 chain (resume): author rebuild: { "zip_sha256": "76588c63d42099c4cfef6b5d6a72e87b4646bcd83d01fc877686177fdf1c68ba", "build_ok": false, "matched": 4, "total": 44, "mismatched": [  "R01_release.json",  "R02_P6_status.json",  "R02_candidate_basis.json",  "R02_classification.json",  "R02_release.json",  "R02_sigma_map.json",  "R03_H_bar_basis.json",  "R03_P6_status.json",  "R03_classification.json",  "R03_gap_diagnosis.json",  "R03_reduced.json",  "R03_release.json",  "R04_G_outcome.json",  "R04_H_bar_basis.json",  "R04_P6_status.json",  "R04_classification.json",  "R04_release.json",  "R04_scstar_derivation.json",  "R05_H_basis.json",  "R05_P6_status.json",  "R05_classification.json",  "R05_obstruction_outcome.json",  "R05_release.json",  "R06_P6_status.json",  "R06_classification.json",  "R06_completeness.json",  "R06_loop_remainders.json",  "R06_release.json",  "R07_H_basis.json",  "R07_P6_status.json",  "R07_classification.json",  "R07_contraction_Kline.json",  "R07_front1_reduced_hhc.json",  "R07_p22.json",  "R07_release.json",  "R08_P6_status.json",  "R08_four_point.json",  "R08_gram.json",  "R08_parity.json",  "R08_release.json" ], "verdict": "FAIL"}
+- 2026-10-16T08:46:37Z r08 chain (resume): FAIL author rebuild
+- 2026-10-16T08:52:20Z R08 rebuild diag: ROOT CAUSE = R01 gate no_unpinned_file=false. Author rebuild matched 4/44 (R01 science certs), then R01_release REJECT. Source zip 76588c63… includes 45 intake/* files (I-B.tex + En*/Hawk*/Oai*/XIX*/XX*/XXII*/XVI-Q.tex + ids_*.txt) tracked by code/r01/release_r01.py but absent from frozen code/r01/r01_expected.json. Pinned file hashes OK; expected file sha matches. XVI-Q Q11 BUILD_OK (pdflatex fixed; 221 pp). No archive; no full zip. Frozen R01 not edited.
+- 2026-10-16T08:53:20Z R08 packaging note (R08-D5): 45 unpinned companion files moved intake/ -> /workspace/XVI-R-companion-intake/ (pinned intake/imports.json untouched; not premises); R08.tex disclosure added; certificates unchanged (D5 recorded in tex + checkpoint only).
+- 2026-10-16T08:53:31Z refrozen (expected da91f5d0…), R01 and R08 gates ACCEPT, source zip 5df10431b9dd…; author rebuild relaunched
+- 2026-10-16T11:25:23Z r08 chain (resume): author rebuild: { "zip_sha256": "5df10431b9dd5332b2dcc71ad748622b85531f904aa40e7297c4e57c48704728", "build_ok": true, "matched": 44, "total": 44, "mismatched": [], "verdict": "PASS"}
+- 2026-10-16T11:25:24Z r08 chain (resume): manifest written last (no sync)
+- 2026-10-16T11:25:24Z r08 chain (resume): archived to archive/R08
+- 2026-10-16T11:27:52Z R08 released (src 5df10431…, full 302883b4…, 44/44, 2pp); archived to archive/R08; status honest partial (Gram CLOSED, parity PARTIAL, four-point OPEN)
+- 2026-10-16T11:46:59Z R09 started: import R08 frozen (archive/R08, full 302883b4…); pdflatex present; intake has only imports.json
+- 2026-10-16T12:34:28Z R09 progress: r09_vertices: V2,V3 match frozen (3 seeds each), V4 seed7 match, seed8 MISMATCH (under investigation), Kch/cbch match, Kchh=cbchh=0; r09_parity: eps scheme + inconsistency shown, odd ansatz 164 ev/187 4D raw, dim Missing; r09_box: G08 reproduced via 3-momentum engine, ghost box running (pid 113949)
+- 2026-10-16T12:59:52Z V4 seed-8 mismatch traced to nsimplify approximating large rationals in r09 numeric() (my code); exact Rational with it gives a match; r09_vertices rerun
+- 2026-10-16T13:25:09Z r09 chain launched detached (waits for box+vertices, then certs→tests→tex→gate→zip→rebuild→manifest→archive)
+- 2026-10-16T13:25:26Z r09_vertices rerun: V2/V3/V4 all match frozen (V4 seeds 7,8), Kch/cbch match, Kchh=cbchh=0 -> Front 2a CLOSED
+- 2026-10-16T13:39:15Z r09 chain STOPPED (user: no thin partial release); box pid 113949 left running
+- 2026-10-16T13:45:41Z fastpole n-gon validated: G08 reproduced exactly in 32 s (slow path 234 s); fast box/box_shift/box_swap launched
+- 2026-10-16T13:56:21Z r09_odd (spectator eps rep, hatgen rule): ODD result Nbar_g=23, T=19, blind=4 (T∩blind=4), Hbar_odd=4, images inside Nbar; even-mode validation (must give 6) running
+- 2026-10-16T14:10:15Z MILESTONE parity: r09_odd even-mode reproduces R07 exactly (Nbar 133, T 126, blind 24, cap 23, H 6; hhc rank 279) -> wrapper validated; odd-mode Hbar_odd = 4 (Nbar 23, T 19, blind 4)
+- 2026-10-16T14:15:35Z OOM: fast box + box_shift killed by kernel OOM (each ~7 GB RSS, 15 GB box); r09_odd odd rerun also died; relaunching odd; box_swap (6.5 GB) and slow box continue
+- 2026-10-16T14:22:25Z MILESTONE parity: Hbar_odd = 4 (formal eps scheme, Schouten not imposed; basis of 4 reps saved). Schouten variant: 138 relations, rank 23, rows see them (rank 20) -> Schouten incompatible with the calculus rows; quotienting Nbar by the 3 Schouten directions inside it gives 2. Four-point feasibility evidence: kappa^4 ansatz hhhh 27243 ev + 4992 4D, Kchh 4329 ev (vs 821 total at 3 pt); ghost box fast path >7 GB RSS (2 OOM kills)
+- 2026-10-16T15:03:03Z four-point feasibility: numeric-point ghost box (r09_numbox) >30 min without finishing its first (3-pt) step; symbolic fast box_swap 6.3 GB / ~1 h CPU unfinished; slow box 131 min CPU unfinished. Stopped all three (exploratory scripts moved to reproducibility/r09_exploratory, not part of the build). Decision: four-point rows infeasible on this box; evidence recorded
+- 2026-10-16T15:04:29Z R09 science final: parity CLOSED (scheme-dep.) Hbar_odd=4; vertices CLOSED; engine built; rows OPEN (infeasible, evidence). certs/tests/tex(2pp)/freeze(5ac9a033…)/gate ACCEPT; chain relaunched (zip→rebuild→manifest→archive)
+- 2026-10-16T15:04:30Z r09 chain: gate ACCEPT; source zip 2d74ee51e5bb4e80…; author rebuild started
+- 2026-10-16T17:53:23Z r09 chain: author rebuild: { "zip_sha256": "2d74ee51e5bb4e80488babbc2376e46ce0a29bf8b35f3c335c0b2e35428d2f13", "build_ok": true, "matched": 49, "total": 49, "mismatched": [], "verdict": "PASS"}
