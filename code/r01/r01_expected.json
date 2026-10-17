@@ -1,0 +1,164 @@
+{
+ "certificates": {
+  "R01_P6_status": {
+   "O1_closure_unchanged": "CLOSED (scoped)",
+   "P6_outcome": "Partial",
+   "bulk_symmetry_restored": false,
+   "claim_status": "partial",
+   "frozen_layer_revisions": [],
+   "goals": {
+    "1_sigma_gap": "Partial: characterised by defect localisation; NOT CLOSED",
+    "2_unclassified_43": "Partial: invariant sector/evanescent visibility computed; classification OPEN",
+    "3_invariant_basis": "OPEN (not attempted beyond goal 2 visibility)",
+    "4_p22_kappa2_consistency": "OPEN (not attempted)"
+   },
+   "insertion": "frozen",
+   "landmark": "XVI-R",
+   "not_implied": "no direction certified physical or trivial; Missing never zero",
+   "premises_imported": [
+    "XVI-Q Q11 (pinned zip)"
+   ],
+   "release": "R01"
+  },
+  "R01_gap_localisation": {
+   "reading": "A one-sector correction delta with A(v+delta)=0 LOCALISES the hhc defect; it is not a derived sigma-image and certifies nothing as trivial. Gap status: CHARACTERISED (localisation), NOT CLOSED.",
+   "results": {
+    "F": {
+     "CS": {
+      "correctable": 8,
+      "correctable_and_ghost_eq": 0,
+      "defect_span_inside_image": false
+     },
+     "all_coords": {
+      "correctable": 123,
+      "correctable_and_ghost_eq": 123,
+      "defect_span_inside_image": true
+     },
+     "hat_deg_1": {
+      "correctable": 96,
+      "correctable_and_ghost_eq": 70,
+      "defect_span_inside_image": false
+     },
+     "hat_deg_ge2": {
+      "correctable": 62,
+      "correctable_and_ghost_eq": 62,
+      "defect_span_inside_image": false
+     },
+     "n_fail": 123,
+     "rank_defect_span": 40,
+     "sector_C": {
+      "correctable": 8,
+      "correctable_and_ghost_eq": 0,
+      "defect_span_inside_image": false
+     },
+     "sector_H": {
+      "correctable": 18,
+      "correctable_and_ghost_eq": 18,
+      "defect_span_inside_image": false
+     },
+     "sector_K": {
+      "correctable": 0,
+      "correctable_and_ghost_eq": 0,
+      "defect_span_inside_image": false
+     },
+     "sector_S": {
+      "correctable": 0,
+      "correctable_and_ghost_eq": 0,
+      "defect_span_inside_image": false
+     }
+    },
+    "G": {
+     "CS": {
+      "correctable": 12,
+      "correctable_and_ghost_eq": 0,
+      "defect_span_inside_image": false
+     },
+     "all_coords": {
+      "correctable": 25,
+      "correctable_and_ghost_eq": 25,
+      "defect_span_inside_image": true
+     },
+     "hat_deg_1": {
+      "correctable": 25,
+      "correctable_and_ghost_eq": 25,
+      "defect_span_inside_image": true
+     },
+     "hat_deg_ge2": {
+      "correctable": 12,
+      "correctable_and_ghost_eq": 12,
+      "defect_span_inside_image": false
+     },
+     "n_fail": 25,
+     "rank_defect_span": 19,
+     "sector_C": {
+      "correctable": 12,
+      "correctable_and_ghost_eq": 0,
+      "defect_span_inside_image": false
+     },
+     "sector_H": {
+      "correctable": 0,
+      "correctable_and_ghost_eq": 0,
+      "defect_span_inside_image": false
+     },
+     "sector_K": {
+      "correctable": 0,
+      "correctable_and_ghost_eq": 0,
+      "defect_span_inside_image": false
+     },
+     "sector_S": {
+      "correctable": 0,
+      "correctable_and_ghost_eq": 0,
+      "defect_span_inside_image": false
+     }
+    }
+   },
+   "set_sizes": {
+    "CS": 99,
+    "all_coords": 821,
+    "hat_deg_1": 545,
+    "hat_deg_ge2": 276,
+    "sector_C": 81,
+    "sector_H": 588,
+    "sector_K": 134,
+    "sector_S": 18
+   }
+  },
+  "R01_unclassified_visibility": {
+   "dim_N_g": 104,
+   "dim_W": 61,
+   "reading": "q(S) = number of unclassified N_g directions that cannot be represented with vanishing S-coordinates (modulo sigma-span + blind). Not a classification: no direction is certified trivial or physical.",
+   "unclassified": 43,
+   "visibility_q": {
+    "CS": 13,
+    "all_coords": 43,
+    "hat_deg_1": 27,
+    "hat_deg_ge2": 27,
+    "sector_C": 13,
+    "sector_H": 28,
+    "sector_K": 25,
+    "sector_S": 0
+   }
+  },
+  "R01_xviq_layer": {
+   "Q11_release_decision_rebuilt": "ACCEPT",
+   "mismatched_certificates": [],
+   "n_reference_certificates": 53,
+   "note": "XVI-Q Q11 rebuilt from the pinned source-only zip inside build/xviq; certificates compared to the values pinned in the zip's q11_expected.json (seconds stripped; guard-scan file counts excluded as in Q10-R1/Q11-R1)",
+   "xviq_source_zip_sha256": "1888f3277b793ee8cbf3954b3819bec03e41d8c4dc59757744dfda8b147a35ad"
+  }
+ },
+ "file_sha256": {
+  "code/r01/r01_certs.py": "8b3ba7c38a492cebd66f920a5d90bc9d208cf931744d779844edaeeadb73d4eb",
+  "code/r01/r01_sci.py": "125a1ef6dcc8c9f02feb032976f6991abf3741c649a2788c8678760e2f6c4c0d",
+  "imports/XVI-Q-Q11-RELEASE_MANIFEST_EXTERNAL.txt": "ea1bf6af39dd04e5436cd96dcb063fb30ebe3f385883cff4e59f4a0afd30dfd2",
+  "imports/XVI-Q-Q11-source-only.zip": "1888f3277b793ee8cbf3954b3819bec03e41d8c4dc59757744dfda8b147a35ad",
+  "intake/imports.json": "04bb6f552e51aab1cc0b6edbf3a0d2163a034126b0604d5e041473ae3691c56a",
+  "manuscript/R01.tex": "845c45a2abdf05bb7d7cd620d6ac2b61ed7180692f23321cd2a5ffdbf5b5704c",
+  "registration/local_registration.json": "537be989c35a261e345476bc53ef7d0fb78b10d8316bf2d4d05784f777dde6b9",
+  "tests/test_r01.py": "143ab002d6d9fa967a389f67aff49e405f64d2eeb64efbfb82b23357db4239d4",
+  "tools/build_r.py": "3216d28e353abb8f071a1e8f0c4b0a3f47161cdf8c5fc31ac4cf75e64c73b97d",
+  "tools/make_expected_r01.py": "bb0a533a0198e493a81f8e6afaafa4466cc522135cba0b8bc443bf4f2b23f61f",
+  "tools/release_tools_r.py": "76b3b5a39f61de9f1e24847b2ced28a7758afd3b7b96441c4c46fedccbbb0715",
+  "tools/stage_xviq.py": "c3024920caa7a88e830a2ce56d90a6f6b5ca9d20c5bb8c1e787aa7fcdbe2624a"
+ }
+}

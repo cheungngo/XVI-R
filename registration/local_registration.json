@@ -1,0 +1,26 @@
+{
+ "landmark": "XVI-R",
+ "series": "XVI",
+ "registered": "locally (this file only); NOT published, NOT pushed; no GitHub edit",
+ "decision": "user (2026-10-12): continue XVI-Q as new landmark XVI-R importing XVI-Q frozen at Q11",
+ "predecessors_read_only": {
+  "XVI-Q": "Q11 (frozen); source-only zip 1888f3277b793ee8cbf3954b3819bec03e41d8c4dc59757744dfda8b147a35ad; Q11 manifest names full zip e2e5980e46ce065d9bd212cd42daed6c4d421cbc9fdda5d25b6b1fa0fe4fe1a2",
+  "XVI-P": "read-only",
+  "XVI-O": "read-only",
+  "XVI-N": "read-only"
+ },
+ "release_plan": {
+  "R01": "sigma-composition gap characterisation; N_g unclassified-direction analysis; invariant evanescent basis / p22 kappa^2 if reachable"
+ },
+ "hard_stops": {
+  "O1_closure": "CLOSED (scoped) only; NOT_CLOSED elsewhere",
+  "bulk_symmetry_restored": false,
+  "insertion": "frozen",
+  "XV_B_opened": false,
+  "XIV_J_opened": false,
+  "Route_B_discharged": false,
+  "Missing_never_zero": true,
+  "no_workspace_sync": true,
+  "OpenAI_tex_and_new_sheets_not_premises": true
+ }
+}

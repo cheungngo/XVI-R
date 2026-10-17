@@ -1,0 +1,12 @@
+{
+ "XVI-Q": {
+  "release": "Q11",
+  "source_only_zip": "imports/XVI-Q-Q11-source-only.zip",
+  "source_only_zip_sha256": "1888f3277b793ee8cbf3954b3819bec03e41d8c4dc59757744dfda8b147a35ad",
+  "how_obtained": "deterministic regeneration from read-only /workspace/XVI-Q via tools/source_set_q06_q07_q08_q09_q10_q11.make_zip after reboot wiped XVI-Q dist/; byte-identical to manifest entry",
+  "manifest": "imports/XVI-Q-Q11-RELEASE_MANIFEST_EXTERNAL.txt",
+  "manifest_sha256": "ea1bf6af39dd04e5436cd96dcb063fb30ebe3f385883cff4e59f4a0afd30dfd2",
+  "full_zip_sha256_named": "e2e5980e46ce065d9bd212cd42daed6c4d421cbc9fdda5d25b6b1fa0fe4fe1a2",
+  "full_zip_on_disk": false
+ }
+}

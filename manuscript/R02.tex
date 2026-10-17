@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs}
+\allowdisplaybreaks
+\input{../build/R02_numbers.tex}
+\title{XVI-R R02: computed BRST-trivial span, classification of the 43 unclassified directions of $N_g$,\\
+and a canonical candidate basis of invariant evanescent operators at $\kappa^3$}
+\author{XVI-R (local landmark; imports XVI-Q frozen at Q11; not published)}
+\date{}
+\begin{document}\maketitle
+\begin{abstract}
+At order $\kappa^3$, three points, pole level, the evanescent defect space $N_g$ ($\dim 104$) left by XVI-Q is examined
+with a \emph{computed} $\sigma$-map on the full monomial space of local ghost-number $-1$ functionals used since Q08,
+rather than with individually tested generators. Of the 43 directions that Q11 left unclassified, \NT{} lie in the computed
+trivial span; none is blind; \NHC{} remain. The \NHC{} remaining directions lie outside the linear span of
+\emph{all} computed $\sigma$-images and blind coordinates (\NR{}/\NHC{} robust), and we give a canonical basis with explicit
+tensor structures. Because the $h\cdot h\cdot c$ $\sigma$-composition gap of Q11 remains open, these are
+\textbf{cohomology candidates}, not proven nontrivial classes; no direction is certified physical. Outcome: \textbf{Partial}.
+\end{abstract}
+
+\section{Scope and premises}
+The only premise is XVI-Q frozen at Q11, imported by its source-only zip (sha \texttt{1888f327\ldots}) and rebuilt inside
+this build. XVI-N, XVI-O, XVI-P and XVI-Q are read-only. OpenAI.tex and the newer companion sheets are not premises.
+O.1 remains CLOSED only in its scoped sense (NOT\_CLOSED elsewhere), bulk symmetry is not restored, and the insertion stays
+frozen. Missing is never treated as zero. One disclosed minimal revision (R02-R1): the R01 gate's unpinned-file check now
+excludes files introduced by R02, which the R02 gate pins.
+
+\section{Set-up}
+The unknowns are the pole-level evanescent coefficients $X=(X_{K hc},X_{\bar c ch},X_{c^*cc},X_{hhh})$ in a fixed monomial
+basis (821 coordinates; every coordinate carries at least one hatted, $(d-4)$-dimensional contraction). The linear system
+$A$ (rows $ccK$, $cc\bar c$, $hhc$, plus Bose symmetry of $X_{hhh}$) and the ghost equation $A_g$
+($\Gamma_{\bar c\ldots}=\rho\,\Gamma_{K\ldots}[K\to T(\bar c)]$, $\rho=-2$) define
+$N_g=\ker\binom{A}{A_g}$, $\dim N_g=104$. Q11 found the decomposition
+$104 = (\text{individually passing }\sigma\text{-images}) + (\text{blind}) - (\text{overlap}) + 43$, with $\dim W_{\rm Q11}=\WQ$.
+
+\paragraph{The computed $\sigma$-map.} The ghost-number $-1$ local functionals are spanned by
+\begin{itemize}
+\item $F$: $\tilde K\cdot F(h,h)$, momentum degree 2, with $\tilde K=K+\bar c F'(h)$, so its $\bar c$ partner is $\rho\,T(\cdot)$;
+\item $G$: $c^*\cdot G(c,h)$, momentum degree 2 (with the $c^*cc$ piece from $h\to s_0h$);
+\item $P$: $\bar c\cdot\Phi(h,h)$, momentum degree 3 (standalone; the ghost equation is imposed on the image, not assumed).
+\end{itemize}
+Each generator $Y$ is mapped to $\sigma(Y)=$ (antifield-type pieces) $-$ (field-type pieces), with the channel operators
+($D$: $K\to\delta S_2/\delta h$; $A$: $h\to s_0h$; $E$: $\bar c\to\sigma_F F(h)$) and signs derived in Q09/Q11. No
+normalisation is fitted. The result is a matrix $\Sigma$ (821 $\times$ \NY). No generator leaks outside the basis.
+
+\section{Results}
+\subsection{Computed trivial span}
+Let $Z=\ker(\binom{A}{A_g}\Sigma)$ and $T=\Sigma Z$. Then $T$ is the set of $\sigma$-images, including arbitrary linear
+combinations of generators that fail individually, that satisfy every constraint. We find
+$\operatorname{rank}\Sigma=\RS$, $\dim Z=\ZY$ and $\dim T=\DT$. If the ghost equation is dropped, $\dim(\Sigma\ker(A\Sigma))=\DTA$.
+\input{../build/R02_tab.tex}
+The standalone $P$ family contributes nothing to $T\cap N_g$ on its own. This is consistent with the ghost equation, which
+admits $\bar c$ only through $\tilde K$.
+
+\subsection{Classification of the 43}
+Set $W'=W_{\rm Q11}+T+\text{blind}_g$. We find $\dim(W'\cap N_g)=\WP$, so
+\[ 43 \;=\; \underbrace{\NT}_{\text{trivial (computed }\sigma)} \;+\; \underbrace{0}_{\text{blind}} \;+\;
+\underbrace{\NHC}_{\text{cohomology candidates}},\qquad \text{physical (proven)}=0 . \]
+The \NT{} newly trivial directions are combinations of $F$ and $G$ images that fail one by one but whose combination
+satisfies all constraints. This answers Q11's question of whether the 43 contain hidden trivial directions: \NT{} of them are.
+\emph{Robustness:} $\dim\big(N_g\cap(\operatorname{span}\Sigma+\text{blind}_g)\big)=\WR=\dim(W'\cap N_g)$. No
+combination of computed images, even one ignoring the constraints, reaches any of the \NHC{} candidates. Any class
+assignment of individual directions depends on the choice of basis; the statement that is independent of that choice is the
+dimension count above, together with the canonical basis below.
+
+\subsection{Why the candidates are not certified}
+A candidate would be a nontrivial cohomology class if (i) $\Sigma$ were the complete image of the Slavnov--Taylor
+linearisation on local gh $-1$ functionals at this order, and (ii) $\sigma(Y)\subset N$ for every $Y$. Neither is proven.
+(ii) fails as computed: the Q11 composition gap (individually, 123 of 194 $F$ images miss $N$, all in the $hhc$ row) is open.
+R01 localised it: the defects are correctable only with mixed-sector, mostly hat-degree-1 corrections. A correct
+$\sigma$ could therefore have images that reach the candidates. The candidate basis is thus an \emph{upper bound}
+($\le\NHC$) on the invariant evanescent operators at this order, and it is conditional on the monomial Y-space being
+complete.
+
+\section{Canonical candidate basis}
+Representatives are the reduced row-echelon form of $N_g$ modulo $W'$ in the fixed coordinate order (sectors $K,C,S,H$;
+Q08 monomial order). The resulting basis is unique and does not depend on the choice of kernel basis.
+Notation: $[K]$, $[C]$, $[H]$ label the amplitudes $X_{Khc}$, $X_{\bar c ch}$, $X_{hhh}$; $\epsilon_i$ are the graviton
+polarisation (symmetric-tensor legs, polarised), $c_1$ the ghost, $\hat x\cdot\hat y$ the evanescent contraction, $p_1,p_2$ the independent momenta.
+Six candidates involve the antifield $K$ (three purely $K$-sector, three mixing $K$, $\bar c$ and $hhh$); sixteen are pure $hhh$
+evanescent structures.
+\input{../build/R02_basis.tex}
+
+\section{Open items}
+\begin{enumerate}
+\item Close the $h\cdot h\cdot c$ $\sigma$-composition gap. Until then, no candidate can be proven nontrivial and none is called physical.
+\item Prove that the F/G/P monomial Y-space is complete at this order. Higher momentum degree and other index structures have not been included.
+\item p22 $\kappa^2$ evanescent-CT consistency: OPEN, not attempted.
+\item O.1 stays scoped; bulk symmetry is not restored; Route B is not discharged; XV-B and XIV-J remain unopened.
+\end{enumerate}
+\end{document}

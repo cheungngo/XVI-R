@@ -1,0 +1,1570 @@
+{
+ "certificates": {
+  "R03_H_bar_basis": {
+   "basis": [
+    {
+     "n_terms": 6,
+     "pivot": [
+      "K",
+      "H_a3_aK*H_gc1_p2*H_p2_p2*T_a3_aK"
+     ],
+     "sectors": [
+      "C",
+      "K"
+     ],
+     "terms": [
+      [
+       "K",
+       "(\\epsilon_3\\!\\cdot\\!K)(c_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{K})",
+       "1"
+      ],
+      [
+       "K",
+       "(K\\!\\cdot\\!p_1)(\\hat{K}\\!\\cdot\\!\\hat{c_1})(\\epsilon_3\\!\\cdot\\!p_2)^2",
+       "- \\frac{1}{2}"
+      ],
+      [
+       "K",
+       "(\\epsilon_3\\!\\cdot\\!p_2)(K\\!\\cdot\\!p_1)(c_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{K})",
+       "-1"
+      ],
+      [
+       "K",
+       "(\\epsilon_3\\!\\cdot\\!p_2)(K\\!\\cdot\\!p_2)(c_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{K})",
+       "-1"
+      ],
+      [
+       "C",
+       "(p_1\\!\\cdot\\!p_2)(\\hat{\\bar c}\\!\\cdot\\!\\hat{c_1})(\\epsilon_3\\!\\cdot\\!p_2)^2",
+       "\\frac{1}{2}"
+      ],
+      [
+       "C",
+       "(\\epsilon_3\\!\\cdot\\!p_2)(c_1\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\bar c})",
+       "1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 8,
+     "pivot": [
+      "K",
+      "H_a3_p1*H_aK_gc1*H_p1_p2*T_a3_aK"
+     ],
+     "sectors": [
+      "C",
+      "K"
+     ],
+     "terms": [
+      [
+       "K",
+       "(\\epsilon_3\\!\\cdot\\!p_1)(K\\!\\cdot\\!c_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{K})",
+       "1"
+      ],
+      [
+       "K",
+       "(\\epsilon_3\\!\\cdot\\!p_1)(K\\!\\cdot\\!c_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{K})",
+       "1"
+      ],
+      [
+       "K",
+       "(\\epsilon_3\\!\\cdot\\!p_2)(K\\!\\cdot\\!c_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{K})",
+       "-1"
+      ],
+      [
+       "K",
+       "(\\epsilon_3\\!\\cdot\\!p_2)(K\\!\\cdot\\!c_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{K})",
+       "-1"
+      ],
+      [
+       "C",
+       "(\\epsilon_3\\!\\cdot\\!p_1)(c_1\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\bar c})",
+       "-1"
+      ],
+      [
+       "C",
+       "(\\epsilon_3\\!\\cdot\\!p_1)(c_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\bar c})",
+       "-1"
+      ],
+      [
+       "C",
+       "(\\epsilon_3\\!\\cdot\\!p_2)(c_1\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\bar c})",
+       "1"
+      ],
+      [
+       "C",
+       "(\\epsilon_3\\!\\cdot\\!p_2)(c_1\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\bar c})",
+       "1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 23,
+     "pivot": [
+      "H",
+      "H_a1_a2**2*H_p1_p2**2*T_a3_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(\\epsilon_1\\!\\cdot\\!\\epsilon_2)^2(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\epsilon_1\\!\\cdot\\!\\epsilon_3)^2(p_1\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\epsilon_1\\!\\cdot\\!\\epsilon_3)^2",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\epsilon_1\\!\\cdot\\!\\epsilon_3)^2(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\epsilon_1\\!\\cdot\\!p_1)^2(\\epsilon_3\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\epsilon_3\\!\\cdot\\!p_1)^2",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(\\epsilon_1\\!\\cdot\\!p_2)^2(\\epsilon_2\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\epsilon_1\\!\\cdot\\!p_2)^2(\\epsilon_3\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\epsilon_2\\!\\cdot\\!\\epsilon_3)^2(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\epsilon_2\\!\\cdot\\!\\epsilon_3)^2",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\epsilon_2\\!\\cdot\\!\\epsilon_3)^2(p_2\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\epsilon_2\\!\\cdot\\!p_1)^2(\\epsilon_3\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\epsilon_3\\!\\cdot\\!p_2)^2",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\epsilon_2\\!\\cdot\\!p_2)^2(\\epsilon_3\\!\\cdot\\!p_2)^2",
+       "1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 32,
+     "pivot": [
+      "H",
+      "H_a1_a2*H_a1_a3*H_p1_p1*H_p1_p2*T_a2_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(p_1\\!\\cdot\\!p_2)^2",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\epsilon_3\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(\\epsilon_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\epsilon_2\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\epsilon_3\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\epsilon_2\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 26,
+     "pivot": [
+      "H",
+      "H_a1_a2*H_p1_p1*H_p1_p2*T_a1_a2*T_a3_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(p_1\\!\\cdot\\!p_1)^2",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-4"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(p_1\\!\\cdot\\!p_2)^2",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-4"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_2\\!\\cdot\\!p_2)^2",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ]
+     ]
+    },
+    {
+     "n_terms": 26,
+     "pivot": [
+      "H",
+      "H_a1_a2*H_p1_p1*H_p1_p2*T_a1_a3*T_a2_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_1)^2",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-4"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-4"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(p_2\\!\\cdot\\!p_2)^2",
+       "-2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ]
+     ]
+    },
+    {
+     "n_terms": 22,
+     "pivot": [
+      "H",
+      "H_a1_a2*H_p1_p1*H_p2_p2*T_a1_a2*T_a3_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(p_1\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_2\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_2\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_2\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 22,
+     "pivot": [
+      "H",
+      "H_a1_a2*H_p1_p1*H_p2_p2*T_a1_a3*T_a2_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_2\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_2\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(p_2\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 16,
+     "pivot": [
+      "H",
+      "H_a1_a2*H_p1_p2**2*T_a1_a2*T_a3_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(p_1\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_2\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 16,
+     "pivot": [
+      "H",
+      "H_a1_a2*H_p1_p2**2*T_a1_a3*T_a2_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_2\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_1)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_1\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!\\epsilon_3)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(p_2\\!\\cdot\\!p_2)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_1)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\epsilon_2\\!\\cdot\\!p_2)(\\epsilon_3\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "-1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 5,
+     "pivot": [
+      "H",
+      "H_p1_p1**2*T_a1_a1*T_a2_a2*T_a3_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "3"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_2\\!\\cdot\\!p_2)^2",
+       "1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 8,
+     "pivot": [
+      "H",
+      "H_p1_p1**2*T_a1_a1*T_a2_a3**2"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(p_1\\!\\cdot\\!p_1)^2(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_1)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "4"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "4"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "4"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_2\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(p_2\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 5,
+     "pivot": [
+      "H",
+      "H_p1_p1**2*T_a1_a2*T_a1_a3*T_a2_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_1)^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "3"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_2\\!\\cdot\\!p_2)^2",
+       "1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 7,
+     "pivot": [
+      "H",
+      "H_p1_p1**2*T_a1_a3**2*T_a2_a2"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(p_1\\!\\cdot\\!p_1)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(p_1\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(p_1\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "2"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(p_2\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 8,
+     "pivot": [
+      "H",
+      "H_p1_p1*H_p1_p2*T_a1_a1*T_a2_a3**2"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_1\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "-1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(p_1\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(p_1\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "-1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_2)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 2,
+     "pivot": [
+      "H",
+      "H_p1_p1*H_p2_p2*T_a1_a1*T_a2_a2*T_a3_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "-1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 6,
+     "pivot": [
+      "H",
+      "H_p1_p1*H_p2_p2*T_a1_a1*T_a2_a3**2"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_1})(p_1\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_3}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})^2",
+       "-1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_2})(p_1\\!\\cdot\\!p_2)^2(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})^2",
+       "-1"
+      ]
+     ]
+    },
+    {
+     "n_terms": 2,
+     "pivot": [
+      "H",
+      "H_p1_p1*H_p2_p2*T_a1_a2*T_a1_a3*T_a2_a3"
+     ],
+     "sectors": [
+      "H"
+     ],
+     "terms": [
+      [
+       "H",
+       "(p_1\\!\\cdot\\!p_1)(p_2\\!\\cdot\\!p_2)(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})",
+       "1"
+      ],
+      [
+       "H",
+       "(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_2})(\\hat{\\epsilon_1}\\!\\cdot\\!\\hat{\\epsilon_3})(\\hat{\\epsilon_2}\\!\\cdot\\!\\hat{\\epsilon_3})(p_1\\!\\cdot\\!p_2)^2",
+       "-1"
+      ]
+     ]
+    }
+   ],
+   "dim": 18
+  },
+  "R03_P6_status": {
+   "O1_closure_unchanged": "CLOSED (scoped)",
+   "P6_outcome": "Partial",
+   "bulk_symmetry_restored": false,
+   "claim_status": "partial",
+   "disclosed": [
+    "R03-D1: N_g (Q08 full rows, 104) differs from Nbar_g (reduced, 139); intersection 101",
+    "R03-D2: R03 code lives in r03/ so the R01/R02 gates are untouched (no frozen-layer edit)"
+   ],
+   "goals": {
+    "1_diagnosis": "ESTABLISHED: B-integrated-out (on-shell) BRST; defect = antighost/gauge-fixing sector at the ghost leg",
+    "2_gap": "Partial: hhc gap CLOSED in reduced variables (F, KKc); G-sector ghost-row defect OPEN",
+    "3_classification": "Partial: of R02's 22, 3 not reduced cocycles, 1 trivial/blind, 18 conditional classes; 0 physical",
+    "4_p22_kappa2_consistency": "OPEN"
+   },
+   "insertion": "frozen",
+   "landmark": "XVI-R",
+   "not_implied": "no direction certified physical; Missing never zero",
+   "release": "R03"
+  },
+  "R03_classification": {
+   "H_bar_dim_nonblind": 18,
+   "physical_certified": 0,
+   "reduced": {
+    "dim_H_bar_nonblind": 18,
+    "dim_Nbar_g": 139,
+    "dim_T_bar": 107,
+    "dim_T_cap_blind": 36,
+    "dim_blind_g": 50,
+    "dim_span_Sigma_plus_blind_cap_Nbar": 121,
+    "rank_Sigma_bar": 113
+   },
+   "status": "CONDITIONAL on the G-sector (ccK/ccb) defect; robust: the classes lie outside span(all computed images) + blind",
+   "transport_R02_22": {
+    "dim": 22,
+    "fail_reduced_constraints": 3,
+    "inside_Nbar_g": 19,
+    "nontrivial_classes_in_H_bar": 18,
+    "trivial_or_blind_in_reduced": 1
+   }
+  },
+  "R03_gap_diagnosis": {
+   "D_split_exact": true,
+   "channel_coefficient_scan": {
+    "channel_coefficients_rows": {
+     "nullspace": [],
+     "rank": 5
+    },
+    "channel_coefficients_rows_and_ghost_eq": {
+     "nullspace": [],
+     "rank": 5
+    }
+   },
+   "leg_identities_hhc_block": {
+    "I1_EH_leg1": 0,
+    "I2_EH_only_legs23_vs_A_K": 21,
+    "I2_legs23_vs_A_K": 0,
+    "I3_E_legs23_vs_A_C": 0,
+    "I3_gf1_E_AC": 40,
+    "I3_gf1_plus_E1": 40,
+    "rank_each": {
+     "A_C": 44,
+     "A_K": 25,
+     "D_EH1": 0,
+     "D_EH2": 18,
+     "D_EH3": 18,
+     "D_gf1": 31,
+     "D_gf2": 21,
+     "D_gf3": 21,
+     "E1": 56,
+     "E2": 44,
+     "E3": 44
+    },
+    "total": 40
+   },
+   "reading": "defect (rank 40) = A-channel on (D_gf + E) at the ghost leg: the antighost / gauge-fixing sector; EH gauge invariance (I1) and leg commutation (I2, E vs A_C) hold. No sign/normalisation fixes it."
+  },
+  "R03_reduced": {
+   "F_images_failing_reduced": 0,
+   "G": {
+    "coefficient_scan_nullspace": [],
+    "eps_minus1_failing": 13,
+    "eps_plus1_failing": 19,
+    "fail_blocks": {
+     "G: ccK ccb": 13
+    }
+   },
+   "KKc": {
+    "blocks": {
+     "pass": 10
+    },
+    "leak": 0,
+    "n": 24
+   },
+   "dim_N_g": 104,
+   "dim_N_g_cap_Nbar_g": 101,
+   "dim_Nbar_g": 139,
+   "equivalence_full_vs_reduced_on_kerAg_rank": 47,
+   "gap_outcome": "hhc gap CLOSED in reduced (Gamma-bar) variables: all F and KKc images satisfy the reduced system; residual G-sector (c*.c.h) defect in ghost rows ccK/ccb remains OPEN (no coefficient fix)",
+   "lambda_test": {
+    "lambda_candidate": "I",
+    "lambda_closes_on_kerAg": false,
+    "sigma_F": "I"
+   },
+   "n_F": 185
+  }
+ },
+ "file_sha256": {
+  "code/r01/r01_certs.py": "8b3ba7c38a492cebd66f920a5d90bc9d208cf931744d779844edaeeadb73d4eb",
+  "code/r01/r01_expected.json": "0d2857876177187021595fb41a9cff917741893b5a485e3cfbb57c36fedb13be",
+  "code/r01/r01_sci.py": "125a1ef6dcc8c9f02feb032976f6991abf3741c649a2788c8678760e2f6c4c0d",
+  "code/r01/release_r01.py": "c06380e8b8059d8e5cb1bbec1bd1c05ebfe70c714d0d2c251152048d9abcc01d",
+  "code/r02/r02_certs.py": "a19abdb9242e5cebe24499d54e7f70e1aacd459e78bb85559f0b43b016f37e86",
+  "code/r02/r02_expected.json": "de667a88aeef6d11bd091941646df3068760e2e5d1343114fc200586cc3bc543",
+  "code/r02/r02_sci.py": "a7bf727c0920da5d6ce092fa948bc89df7b5eb6bb340fa0e72b794046f948cce",
+  "code/r02/release_r02.py": "6f7c01a1ae473de83c50f87e2055a67c16feee3b0d60174d6a3c3ddc8d998dad",
+  "imports/XVI-Q-Q11-RELEASE_MANIFEST_EXTERNAL.txt": "ea1bf6af39dd04e5436cd96dcb063fb30ebe3f385883cff4e59f4a0afd30dfd2",
+  "imports/XVI-Q-Q11-source-only.zip": "1888f3277b793ee8cbf3954b3819bec03e41d8c4dc59757744dfda8b147a35ad",
+  "intake/imports.json": "04bb6f552e51aab1cc0b6edbf3a0d2163a034126b0604d5e041473ae3691c56a",
+  "manuscript/R01.tex": "845c45a2abdf05bb7d7cd620d6ac2b61ed7180692f23321cd2a5ffdbf5b5704c",
+  "manuscript/R02.tex": "cec8478961cdf1eca5591468227b057cc4d0326dadc65acf2d3640874536bc40",
+  "r03/R03.tex": "27c302171ce1761e786a4b5425f4cc2e57f0ab0b6598bb11cf115475969b7518",
+  "r03/build_r03.py": "056af55dc4ee8e5da7e2d4cbbd1e41edd6fd54dc9289dcea5c312355a030d857",
+  "r03/code/r03_certs.py": "d37ac77e5bdba10f238a2f97ba07df86cc5866b204c3f9d908a52f00755d5682",
+  "r03/code/r03_diag.py": "4e2b6c05d781eb9bbf668cef53c211e8db245bbe6b1a509b44602391baff30fb",
+  "r03/code/r03_final.py": "59b32e2ec8cec9615bdb812b79ac242be102745eeda358cf3c8f581d8cc4ed71",
+  "r03/code/r03_fix.py": "14c0b6b5b86daefa7d02bcf8b415f718d1ac903fcb6b92ab76f1a09d9a28869f",
+  "r03/code/r03_fix2.py": "57b295f83b77fb3c0ce61e524fd5c122698700101c72ed55cf8608ad6936b36e",
+  "r03/code/r03_gscan.py": "f9d5235dbe471475360b63fc90c97de720233ad98d082c2b47d4b67b2eaab06e",
+  "r03/code/r03_legs.py": "7860a6daa1572f1e4fb286d0114cb876a74e9a8c9643d3852e98e0c04c2c8755",
+  "r03/make_expected_r03.py": "096f5133d7ea3b96e9d142bf009e1e09f4d39e1f8718df5f455b1a4f85bc5f59",
+  "r03/release_tools_r03.py": "b486894d53ee0d32cd9d729a58b5aac27eb59b2935c7dd40d30cb141e0ec6bd1",
+  "r03/tests/test_r03.py": "81380066dbcb8ecd2a389132135c3c943f7ff3c4bc702f6af72ba72c1cbbb244",
+  "registration/local_registration.json": "537be989c35a261e345476bc53ef7d0fb78b10d8316bf2d4d05784f777dde6b9",
+  "tests/test_r01.py": "143ab002d6d9fa967a389f67aff49e405f64d2eeb64efbfb82b23357db4239d4",
+  "tests_r02/test_r02.py": "2207ad9f32472a0e4970208af63e55d92f15050df42f33b2e6736fd5ba066835",
+  "tools/build_r.py": "3216d28e353abb8f071a1e8f0c4b0a3f47161cdf8c5fc31ac4cf75e64c73b97d",
+  "tools/build_r02.py": "8966fd42f6f50036ce941a5470debb6ae7f1bfb18d78a10a6cf146b036565dec",
+  "tools/make_expected_r01.py": "bb0a533a0198e493a81f8e6afaafa4466cc522135cba0b8bc443bf4f2b23f61f",
+  "tools/make_expected_r02.py": "3f7dd3a0acdd19ee9ad388b5cb896712a924aa0927815eae1e4eee6dc26064e7",
+  "tools/release_tools_r.py": "76b3b5a39f61de9f1e24847b2ced28a7758afd3b7b96441c4c46fedccbbb0715",
+  "tools/release_tools_r02.py": "02c00a058bd4eb583826687ad2624c8027bea052b57a00e51c3104c997e526d2",
+  "tools/stage_xviq.py": "c3024920caa7a88e830a2ce56d90a6f6b5ca9d20c5bb8c1e787aa7fcdbe2624a"
+ }
+}

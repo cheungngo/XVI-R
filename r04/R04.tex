@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs}
+\allowdisplaybreaks
+\input{../build/R04_numbers.tex}
+\title{XVI-R R04: the ghost antifield $c^*$ and the $G$-sector ghost-row defect\\
+in the reduced ($\bar\Gamma$) formulation at $\kappa^3$}
+\author{XVI-R (local landmark; imports XVI-Q frozen at Q11; not published)}
+\date{}
+\begin{document}\maketitle
+\begin{abstract}
+R03 closed the $h\cdot h\cdot c$ $\sigma$-composition gap in reduced variables but left a residual defect for
+$Y=c^*\cdot G(c,h)$: 13 of 33 images failed the ghost rows $ccK$ and $cc\bar c$. We derive $\bar\sigma(Y)$ from the
+reduced master $\bar S=S_{EH}+\int\tilde K\cdot s_0h+\int c^*\cdot s_0c$ with $\tilde K=K+\bar c F'(h)$. The three
+pieces are $X_K=(D^T\tilde K)\cdot G$, $X_C=\rho\,T(X_K)$ (the $\tilde K$ expansion, not an independent kinetic term),
+and $X_S=-s_0h\cdot\delta Y/\delta h$ with $\epsilon_S=-1$. Nothing is fitted. The raw kinetic alternative
+$\bar c\,\square\,G$ (Q08's handmade $X_C$) fails every generator. With the derived image, \NP{} of \NGens{} pass and
+\NF{} fail, all on $ccK{+}cc\bar c$, and every failure carries a single hatted contraction on the $c^*$ index. No
+completion of the three pieces removes them. The obstruction is recorded as OPEN. Excluding the failing images from
+$\operatorname{im}\bar\sigma$ (they are not BRST images), one finds $\dim\bar H=\HB$ conditional classes; R03's 18 all
+survive and two more appear. No direction is certified physical. Outcome: \textbf{Partial}.
+\end{abstract}
+
+\section{Scope}
+Premises: XVI-Q Q11 (pinned zip) and the R01--R03 layers (their gates must ACCEPT). OpenAI.tex and the new sheets are
+not premises. O.1 stays CLOSED only in its scoped sense; bulk symmetry is not restored; the insertion is frozen.
+R04 code lives in \texttt{r04/}; R01--R03 gates are untouched (disclosure R04-D2).
+
+\section{Derived $\bar\sigma$ on $Y=c^*\cdot G(c,h)$}
+\subsection{Reduced master}
+After integrating out $B$, the independent variables are $(h,c,\tilde K,c^*)$ with $\tilde K=K+\bar c F'(h)$. The
+classical reduced action is
+\[ \bar S = S_{EH}[h] + \int \tilde K\cdot s_0 h + \int c^*\cdot s_0 c . \]
+There is no independent $\bar c$: it sits inside $\tilde K$. The linearized antibracket $\bar\sigma=(\bar S,\cdot)$ on a
+local ghost-number $-1$ functional $Y$ is therefore fixed by functional derivatives of $\bar S$.
+
+\subsection{The three pieces}
+For $Y=\int c^*_\mu G^\mu(c,h)$:
+\begin{enumerate}
+\item $\displaystyle\frac{\delta\bar S}{\delta c}\cdot\frac{\delta Y}{\delta c^*}
+      = \tilde K\cdot\frac{\delta(s_0h)}{\delta c}\cdot G =(D^T\tilde K)\cdot G$.
+      At three points only the free part of $s_0h=Dc$ contributes, giving the $K$-sector amplitude $X_K$.
+\item Expanding $\tilde K=K+\bar c F'(h)$ converts $X_K$ into a $(K,\bar c)$ pair. The ghost equation of the reduced
+      formalism is exactly this expansion on amplitudes: $X_{\bar c}=\rho\,T(X_K)$ with $\rho=-2$ and $T$ the Q08 map.
+      So $X_C=\rho\,T(X_K)$. This is \emph{not} an independent kinetic term $\bar c\,\square\,G$.
+\item $-\dfrac{\delta\bar S}{\delta h^*}\cdot\dfrac{\delta Y}{\delta h} = -s_0h\cdot\delta Y/\delta h$, i.e.\ $h\to s_0h=Dc$
+      on $G$, landing in the $c^*cc$ sector. The relative sign $\epsilon_S=-1$ is the antibracket's field/antifield sign
+      (the same sign that fixes $\lambda_F=\lambda_P=-1$ in Q09); both signs were tested in R03, and $-1$ is uniquely better.
+\end{enumerate}
+The $c\to s_0c$ piece of the antibracket produces four-point amplitudes at this order and drops.
+
+\subsection{What is ruled out}
+\begin{itemize}
+\item Q08's handmade $X_C=(-\tfrac12)p^2(c^*\to\bar c)$, and every other global multiple of $p^2(c^*\to\bar c)$: the
+      joint nullspace of $(X_K,\,p^2(c^*\to\bar c),\,X_S)$ on all 33 generators is empty, and every tested $(a,b,c)$ fails
+      all 33 on the reduced system.
+\item Truncations of $X_S$ by the rule $s_0\hat h=0$ (drop $T_{a3}$ before polarising, or set $X_S=0$ when $G$ depends on
+      $\hat h$): both raise the failure count from 13 to 19.
+\item Any global reweighting of $(X_K,X_C{=}\rho T,X_S)$: empty nullspace (R03).
+\end{itemize}
+The derived image is therefore the unique candidate built from the reduced master with the standard channel operators.
+
+\section{G-sector outcome}
+With the derived image, \NP{} of \NGens{} generators satisfy the reduced rows, Bose symmetry and the ghost equation.
+The remaining \NF{} fail \emph{both} $ccK$ and $cc\bar c$ (never $hhc$ or Bose alone). Pattern: every failure has a
+single hatted contraction on the $c^*$ index ($T_{\cdot\,gv}$ with only $H$ elsewhere). The six monomials that carry
+$T_{\cdot\,gv}$ together with a second $T$ on the graviton side all pass. No completion of the three pieces removes
+the thirteen. We record
+\[ \textbf{OPEN: $G$-sector $T(c^*)$ obstruction.} \]
+Whether a refined treatment of hatted indices in $D^T$ (or in the ghost-row assembly) would close them, or a genuine
+obstruction in the continuum theory is present, is not settled here.
+
+\section{Classification}
+Failing $G$ images are excluded from $\operatorname{im}\bar\sigma$: they are computed artefacts, not BRST images
+(disclosure R04-D1). With $Y\in\{F,\,G_{\mathrm{pass}},\,\tilde K\tilde K c\}$,
+\[ \operatorname{rank}\bar\Sigma=\RS,\quad \dim\bar T=\TB,\quad \dim(\mathrm{blind}_g)=\BG,\quad
+   \dim\bar N_g=\NB = (\TB+\BG-\TCB)+\HB . \]
+R03's 18 conditional classes (the transport of R02's 22 after the reduced cut) all remain nontrivial in $\bar H$; two
+further classes appear because two dimensions of R03's $\bar T$ had used failing $G$ images. Robustness: even the span of
+\emph{all} computed images (including the 13 failures) plus blind meets $\bar N_g$ in dimension 121, so the $\HB$ classes
+lie outside that span as well. They stay \textbf{conditional} on the $T(c^*)$ obstruction and on Y-space completeness.
+Physical (proven): 0.
+
+\section{Canonical basis of $\bar H$ (\HB{} classes)}
+Reduced-row-echelon form of $\bar N_g$ modulo $\bar T+$blind in the Q08 coordinate order.
+\input{../build/R04_basis.tex}
+
+\section{Open items}
+\begin{enumerate}
+\item Close the $T(c^*)$ obstruction on the 13 $G$ generators (refined $D^T$ / ghost-row calculus on hatted $c^*$, or a
+      continuum argument that these $Y$ are not in the domain).
+\item Y-space completeness beyond power-counting monomials: OPEN.
+\item p22 $\kappa^2$ evanescent-CT consistency: OPEN.
+\item O.1 stays scoped; bulk symmetry is not restored; Route B is not discharged; XV-B and XIV-J remain unopened.
+\end{enumerate}
+\end{document}

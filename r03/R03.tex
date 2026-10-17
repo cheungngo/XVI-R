@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs}
+\allowdisplaybreaks
+\input{../build/R03_numbers.tex}
+\input{../build/R03_legs.tex}
+\title{XVI-R R03: the $h\cdot h\cdot c$ $\sigma$-composition gap: diagnosis, closure in reduced
+($\bar\Gamma$) variables, and the resulting evanescent cohomology at $\kappa^3$}
+\author{XVI-R (local landmark; imports XVI-Q frozen at Q11; not published)}
+\date{}
+\begin{document}\maketitle
+\begin{abstract}
+In XVI-Q Q11 and XVI-R R01--R02, $\sigma$-images of local ghost-number $-1$ functionals left the constraint space
+$N$ on the $h\cdot h\cdot c$ row, and every cohomology statement was therefore conditional. We localise the defect exactly. It
+is the gauge-fixing/antighost sector at the ghost leg: the B-integrated-out BRST operator is nilpotent only up to
+antighost equations of motion. No sign or normalisation fixes it. In the reduced functional $\bar\Gamma(\tilde K,c^*,h,c)$,
+the standard Zinn-Justin variables, all \NF{} $\tilde K hh$ images and all \NK{} nonzero $\tilde K\tilde K c$ images satisfy the
+reduced Slavnov--Taylor system and the ghost equation. \textbf{The $hhc$ gap is closed} without fitting. A residual defect
+remains for the $c^*ch$ family, in the ghost rows $ccK$/$cc\bar c$ (not in $hhc$), and no coefficient choice removes it. In the reduced setting,
+$\dim\bar N_g=\NB$, of which \TB{}+\BG{}$-$\TCB{} directions are trivial or blind, leaving \HB{} classes. Of R02's 22
+candidates, \TA{} are not reduced cocycles, \TT{} is trivial or blind, and \TN{} are nontrivial modulo every computed image. They remain
+conditional on the $c^*$-sector defect. No direction is certified physical. Outcome: \textbf{Partial}.
+\end{abstract}
+
+\section{Scope}
+The only premise is XVI-Q Q11, imported by the pinned source-only zip and rebuilt inside the build. R01 and R02 are layers, and their gates must ACCEPT.
+XVI-N through XVI-Q are read-only. OpenAI.tex and the new sheets are not premises. O.1 stays CLOSED in its scoped sense only; bulk
+symmetry is not restored; the insertion is frozen. R03 introduces no frozen-layer edit: its code lives in \texttt{r03/},
+outside the R01/R02 gate globs. Disclosure R03-D1: the reduced constraint space $\bar N_g$ differs from Q08's $N_g$ (below).
+
+\section{Diagnosis}
+\subsection{No channel normalisation closes the gap}
+Split the $F$ image ($Y=\tilde K\cdot F(h,h)$) into channel pieces $D_{EH}$, $D_{gf}$ (the split is exact), $A_K$, $E$ and $A_C$. Ask for
+\emph{global} coefficients $c_i$ such that $A\sum_i c_i\,\mathrm{piece}_i(Y)=0$ for all 204 generators at once. The
+coefficient matrix has full rank 5: the only solution is $c=0$, with or without the ghost equation. Dropping the gauge-fixing
+part, dropping $E$, or both, leaves defect ranks 32, 62 and 64. A sign, normalisation or double-counting error is excluded.
+
+\subsection{Leg-resolved nilpotency}
+Restricted to the $hhc$ row block (Bose rows excluded, because leg pieces are not Bose-symmetric one by one), the
+sub-identities of $\sigma^2=0$ have the following ranks (0 means the identity holds):
+\begin{center}\begin{tabular}{lr}\toprule identity & rank\\\midrule
+\LegRows
+\bottomrule\end{tabular}\end{center}
+EH gauge invariance and the commutation of variations on different legs hold exactly. The entire defect (rank \DR) is
+$A\cdot(D^{(1)}_{gf}+E^{(1)})$: the gauge-fixing kinetic term and the antighost channel, both evaluated on the ghost leg.
+\emph{Correction to an earlier relay:} the ranks 28/37/71 reported for these identities came from a run that used the
+full matrix including Bose rows, and they are artefacts.
+
+\subsection{Interpretation (derived)}
+With the Nakanishi--Lautrup field $B$ integrated out, $s\bar c=-F(h)/\xi$ and $s^2\bar c\propto\delta S/\delta\bar c$. The
+BRST operator, and hence $\sigma$, is nilpotent only on the antighost shell. This is exactly the term located above. The
+standard remedy (Zinn-Justin) is to write $\Gamma=\bar\Gamma+S_{gf}$. For linear gauges, the ghost equation makes $\bar c$ enter
+$\bar\Gamma$ only through $\tilde K=K+\bar cF'(h)$, and the identity becomes $\mathcal S(\bar\Gamma)=0$. Its $hhc$ row has only the
+channels $A$ and $D_{EH}$, and its linearisation $\bar\sigma=(\bar S_0,\cdot)$ on $Y(\tilde K,c^*,h,c)$ is nilpotent off-shell.
+Nothing is fitted: the reduced row is the frozen row with the gauge-fixing kinetic term and the $E$ channel removed, and the
+$\bar c$ components follow from the ghost equation $X_{\bar c}=\rho\,T(X_K)$, $\rho=-2$.
+
+\section{Closure in reduced variables}
+\begin{itemize}
+\item $\tilde K hh$ ($F$): $X_H=\sum_{\rm legs}D_{EH}$, $X_K=A_K$, $X_C=\rho T(X_K)$. \textbf{0 of \NF} nonzero images fail.
+\item $\tilde K\tilde K c$ (new family; two Grassmann-odd $\tilde K$, antisymmetric): \NKG{} generators, \NK{} nonzero images, all pass.
+\item $c^*ch$ ($G$): the sign $\epsilon_S$ of the $c^*cc$ piece was left open in Q11. Both signs fail (\GM{} resp.\ \GP{} of 33), only
+in the ghost rows $ccK$ and $cc\bar c$. A global scan of the coefficients of $(X_K,X_C,X_S)$ has an empty nullspace. This residual defect is OPEN.
+\end{itemize}
+These are all the ghost-number $-1$ three-field contents in $(\tilde K,c^*,h,c)$; the standalone $\bar c$ family of R02 has no reduced counterpart.
+
+\section{Full versus reduced constraints (disclosure R03-D1)}
+Under the ghost equation, the full $hhc$ row of Q08 and the reduced row differ: on $\ker A_g$, the difference has rank \EQ. The
+only scalar that could reconcile the gauge-fixing and $E$ channels is $\lambda=\sigma_F=i$, and it does not. Hence
+$\dim\bar N_g=\NB$ against $\dim N_g=104$, with intersection \NI. The reduced setting is the justified one, because its
+$\sigma$ is nilpotent on every family except the $c^*$ sector. The frozen Q08 numbers are not revised; they are superseded for
+cohomology purposes and kept as records.
+
+\section{Reduced cohomology and classification}
+With $\bar T=\bar\Sigma\ker(\bar{\mathcal A}\bar\Sigma)$ ($\operatorname{rank}\bar\Sigma=\RS$, $\dim\bar T=\TB$), blind directions in
+$\bar N_g$ of dimension \BG{}, and overlap \TCB, we get
+\[\dim\bar N_g=\NB=(\TB+\BG-\TCB)+\HB .\]
+Robustness: $\dim\big(\bar N_g\cap(\operatorname{span}\bar\Sigma+\text{blind})\big)=\SR$. Even the failing $G$ images reach none of the \HB{} classes.
+\paragraph{R02's 22 candidates} (canonical basis, re-read from the R02 certificate): \TA{} violate the reduced
+constraints and so are not cocycles of $\mathcal S(\bar\Gamma)$; they were artefacts of the non-nilpotent full rows. \TT{} is trivial or blind,
+and \TN{} are nontrivial in $\bar H$ modulo every computed image, spanning all of $\bar H$. These would be proven
+nontrivial classes, provided the remaining $c^*$-sector defect is closed without producing images in their span. We therefore list them as
+\textbf{conditional classes}, not physical.
+
+\section{Canonical basis of $\bar H$ (\HB{} classes)}
+This is the rref of $\bar N_g$ modulo $\bar T+$blind in the fixed coordinate order. Notation as in R02.
+\input{../build/R03_basis.tex}
+
+\section{Open items}
+\begin{enumerate}
+\item The $c^*ch$ ($G$) sector: \GM{} of 33 images fail the ghost rows $ccK$/$cc\bar c$ in reduced variables, and no coefficient fix exists. A derived treatment of
+$s c^*$ (including the $\tilde K$-dependent terms of $\delta\bar S/\delta c$) is needed. Until then the \HB{} classes are conditional.
+\item Completeness of the Y-space beyond the power-counting monomial bases. All field contents are included.
+\item p22 $\kappa^2$ evanescent-CT consistency: OPEN.
+\item O.1 stays scoped; bulk symmetry is not restored; Route B is not discharged; XV-B and XIV-J remain unopened.
+\end{enumerate}
+\end{document}
